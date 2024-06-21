@@ -1,0 +1,261 @@
+oneEye:
+  "{\
+  3::__colorEye__ eyes\
+  |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, multicolored eyes\
+  }"
+eye:
+  "{\
+  4::__oneEye__{, one eye closed|3::}\
+  |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
+  }"
+hair: "__hairColor__, __hairLength__, __hairTexture__, __hairStyle__, __hairBang__{, __hairExtraTop__|2::}{, __hairExtraFront__|}{, __hairExtraSide__|3::}{, __hairExtraBottom__|3::}"
+actions: "{-2$$, $$__facial__|__facial__}, __looking__"
+boob:
+  flat:
+    flat: "flat chest"
+    small: "[flat chest:small breasts:0.2]"
+    medium: "[flat chest:medium breasts:0.2]"
+    large: "[flat chest:large breasts:0.2]"
+  small:
+    flat: "[small breasts:flat chest:0.2]"
+    small: "small breasts"
+    medium: "[small:medium:0.2] breasts"
+    large: "[small:large:0.2] breasts"
+  medium:
+    flat: "[medium breasts:flat chest:0.2]"
+    small: "[medium:small:0.2] breasts"
+    medium: "medium breasts"
+    large: "[medium:large:0.2] breasts"
+  large:
+    flat: "[large breasts:flat chest:0.2]"
+    small: "[large:small:0.2] breasts"
+    medium: "[large:medium:0.2] breasts"
+    large: "large breasts"
+hairColor:
+  "{\
+  2::__colorHair__ hair\
+  |{2$$ hair, $$__colorHair__|__colorHair__} hair, __multicolorHair__\
+  }"
+hairLength:
+  "{\
+  very short hair\
+  |2::short hair\
+  |3::medium hair\
+  |3::long hair\
+  |2::very long hair\
+  }"
+hairTexture:
+  - curly hair
+  - drill hair
+  - messy hair
+  - pointy hair
+  - straight hair
+  - wavy hair
+  - ringlets
+hairBang:
+  - bangs
+  - arched bangs
+  - asymmetrical bangs
+  - bangs pinned back
+  - blunt bangs
+  - crossed bangs
+  - choppy bangs
+  - diagonal bangs
+  - hair over eyes
+  - hair over one eye
+  - long bangs
+  - parted bangs
+  - curtained hair
+  - short bangs
+  - swept bangs
+  - hair pulled back
+hairExtraTop:
+  - ahoge
+  - heart ahoge
+  - huge ahoge
+  - antenna hair
+hairExtraFront:
+  - hair between eyes
+  - hair intakes
+  - single hair intake
+  - sidelocks
+  - drill sidelocks
+  - single sidelock
+  - braided bangs
+hairExtraSide:
+  - hair flaps
+hairExtraBottom:
+  - blunt ends
+hairStyle:
+  - bob cut
+  - inverted bob
+  - flipped hair
+  - dreadlocks
+  - hime cut
+  - bow-shaped hair
+  - braid
+  - side braid
+  - side braids
+  - single braid
+  - multiple braids
+  - twin braids
+  - low twin braids
+  - hair bun
+  - braided bun
+  - single hair bun
+  - double bun
+  - single side bun
+  - cone hair bun
+  - doughnut hair bun
+  - hair rings
+  - braided hair rings
+  - single hair ring
+  - half updo
+  - one side up
+  - two side up
+  - low-tied long hair
+  - multi-tied hair
+  - ponytail
+  - high ponytail
+  - low ponytail
+  - short ponytail
+  - split ponytail
+  - wide ponytail
+  - folded ponytail
+  - front ponytail
+  - side ponytail
+  - high side ponytail
+  - topknot
+  - twintails
+  - low twintails
+  - short twintails
+  - tri tails
+  - quad tails
+  - twin drills
+colorBase:
+  - aqua
+  - black
+  - blue
+  - light blue
+  - dark blue
+  - brown
+  - light brown
+  - green
+  - light green
+  - dark green
+  - grey
+  - orange
+  - pink
+  - purple
+  - light purple
+  - red
+  - dark red
+color:
+  "{\
+  white\
+  |yellow\
+  |17::__colorBase__\
+  }"
+colorHair:
+  "{\
+  white\
+  |blonde\
+  |17::__colorBase__\
+  }"
+colorEye:
+  "{\
+  yellow\
+  |17::__colorBase__\
+  }"
+multicolorHair:
+  - multicolored hair
+  - colored inner hair
+  - colored tips
+  - gradient hair
+  - split-color hair
+  - streaked hair
+  - two-tone hair
+facial:
+  - angry
+  - annoyed
+  - clenched teeth
+  - scowl
+  - blush
+  - blush stickers
+  - embarrassed
+  - full-face blush
+  - nose blush
+  - bored
+  - confused
+  - crazy
+  - disgust
+  - drunk
+  - excited
+  - exhausted
+  - expressionless
+  - flustered
+  - furrowed brow
+  - grimace
+  - happy
+  - nervous
+  - nosebleed
+  - open mouth
+  - parted lips
+  - pain
+  - pout
+  - raised eyebrows
+  - sad
+  - frown
+  - gloom \(expression\)
+  - tears
+  - scared
+  - worried
+  - serious
+  - sigh
+  - sleepy
+  - sulking
+  - surprised
+  - v-shaped eyebrows
+  - ahegao
+  - fucked silly
+  - aroused
+  - naughty face
+  - seductive smile
+  - torogao
+  - crazy smile
+  - evil smile
+  - grin
+  - evil grin
+  - light smile
+  - doyagao
+  - smirk
+  - smug
+  - troll face
+  - screaming
+  - wavy mouth
+  - chestnut mouth
+  - staring
+  - half-closed eyes
+  - squinting
+  - rolling eyes
+looking:
+  - looking afar
+  - looking at viewer
+  - looking away
+  - looking down
+  - looking to the side
+  - looking up
+poseS:
+  - head tilt
+poseA1:
+poseA2:
+poseAH1:
+poseAH2:
+poseH1:
+poseH2:
+poseT:
+poseTB:
+poseB:
+poseBL:
+poseL:
+poseATBL:

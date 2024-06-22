@@ -2,412 +2,412 @@
   reimu:
     chara: "hakurei_reimu, touhou, brown eyes, black hair, long hair, __boob/small/medium__"
     outfit: "hair_bow, red_bow, frilled_bow, frilled_hair_tubes, detached_sleeves, yellow_ascot, red_skirt, ribbon-trimmed_sleeves, wide_sleeves, white_sleeveses"
-    full: "__touhou/reimu/chara__, __touhou/reimu/outfit__"
+    full: "__2hu/reimu/chara__, __2hu/reimu/outfit__"
   marisa:
     chara: "kirisame_marisa, touhou, blonde hair, yellow eyes, single_braid, long hair, __boob/small/medium__"
     outfit: "white_bow, hair_bow, witch_hat, white_shirt, black_vest, black_hat, hat_bow, white_apron, black_skirt, waist_apron, puffy_short_sleeves"
-    full: "__touhou/marisa/chara__, __touhou/marisa/outfit__"
+    full: "__2hu/marisa/chara__, __2hu/marisa/outfit__"
   rumia:
     chara: "rumia, touhou, blonde hair, red eyes, __boob/flat/flat__"
     outfit: "hair_ribbon, red_ribbon, long_sleeves, black_vest, white_shirt, red_ascot, collared_shirt, black_skirt"
-    full: "__touhou/rumia/chara__, __touhou/rumia/outfit__"
+    full: "__2hu/rumia/chara__, __2hu/rumia/outfit__"
   daiyousei:
     chara: "daiyousei, touhou, fairy_wings, short hair, side ponytail, green hair, blue eyes, long hair, __boob/small/large__"
     outfit: "hair_bow, yellow_bow, white_shirt, yellow_ascot, collared_shirt, blue_vest, blue_skirt, puffy_short_sleeves"
-    full: "__touhou/daiyousei/chara__, __touhou/daiyousei/outfit__"
+    full: "__2hu/daiyousei/chara__, __2hu/daiyousei/outfit__"
   cirno:
     chara: "cirno, touhou, blue hair, blue eyes, ice_wings, __boob/flat/flat__"
     outfit: "blue_bow, hair_bow, blue_dress, puffy_short_sleeves, red_ribbon"
-    full: "__touhou/cirno/chara__, __touhou/cirno/outfit__"
+    full: "__2hu/cirno/chara__, __2hu/cirno/outfit__"
   tan-cirno:
     chara: "tanned_cirno, touhou, blue hair, blue eyes, tan, ice_wings, __boob/flat/flat__"
     outfit: "blue_bow, hair_bow, blue_dress, sunflower, vines, puffy_short_sleeves, morning_glory, red_ribbon, pink_flower"
-    full: "__touhou/tan-cirno/chara__, __touhou/tan-cirno/outfit__"
+    full: "__2hu/tan-cirno/chara__, __2hu/tan-cirno/outfit__"
   meiling:
     chara: "hong_meiling, touhou, red hair, green eyes, twin_braids, long hair, __boob/medium/large__"
     outfit: "hair_bow, black_bow, star_hat_ornament, green_hat, white_shirt, beret, green_vest, puffy_short_sleeves"
-    full: "__touhou/meiling/chara__, __touhou/meiling/outfit__"
+    full: "__2hu/meiling/chara__, __2hu/meiling/outfit__"
   koakuma:
     chara: "koakuma, touhou, red hair, red eyes, head_wings, bat_wings, black_wings, long hair, __boob/medium/large__"
     outfit: "white_shirt, red_necktie, black_vest, black_skirt, long_sleeves, collared_shirt"
-    full: "__touhou/koakuma/chara__, __touhou/koakuma/outfit__"
+    full: "__2hu/koakuma/chara__, __2hu/koakuma/outfit__"
   patchouli:
     chara: "patchouli_knowledge, touhou, purple hair, purple eyes, hair_bow, blue_bow, red_bow, long hair, __boob/medium/medium__"
     outfit: "mob_cap, crescent_hat_ornament, long_sleeves, vertical-striped_clothes, vertical-striped_dress, red_ribbon"
-    full: "__touhou/patchouli/chara__, __touhou/patchouli/outfit__"
+    full: "__2hu/patchouli/chara__, __2hu/patchouli/outfit__"
   sakuya:
     chara: "izayoi_sakuya, touhou, grey hair, blue eyes, twin_braids, __boob/small/medium__"
     outfit: "hair_bow, green_bow, maid_headdress, white_apron, waist_apron, blue_dress, puffy_short_sleeves, white_shirt, maid_apron, frilled_apron"
-    full: "__touhou/sakuya/chara__, __touhou/sakuya/outfit__"
+    full: "__2hu/sakuya/chara__, __2hu/sakuya/outfit__"
   remilia:
     chara: "remilia_scarlet, touhou, blue hair, red eyes, slit pupils, bat_wings, __boob/flat/small__"
     outfit: "mob_cap, pink_hat, red_ribbon, hat_ribbon, red_ascot, puffy_short_sleeves, collared_shirt"
-    full: "__touhou/remilia/chara__, __touhou/remilia/outfit__"
+    full: "__2hu/remilia/chara__, __2hu/remilia/outfit__"
   flandre:
     chara: "flandre_scarlet, touhou, blonde hair, red eyes, slit pupils, one side up, crystal_wings, crystal, __boob/flat/flat__"
     outfit: "mob_cap, white_hat, red_ribbon, hat_ribbon, yellow_ascot, puffy_short_sleeves, red_skirt, red_vest, white_shirt"
-    full: "__touhou/flandre/chara__, __touhou/flandre/outfit__"
+    full: "__2hu/flandre/chara__, __2hu/flandre/outfit__"
   letty:
     chara: "letty_whiterock, touhou, light purple hair, purple eyes, __boob/medium/medium__"
     outfit: "white_hat, white_headwear, blue_vest, white_shirt, long_sleeves, white_apron, white_scarf, waist_apron, blue_skirt, lapel_pin"
-    full: "__touhou/letty/chara__, __touhou/letty/outfit__"
+    full: "__2hu/letty/chara__, __2hu/letty/outfit__"
   chen:
     chara: "chen, touhou, brown hair, brown eyes, two_tails, nekomata, animal_ear_fluff, __boob/flat/flat__"
     outfit: "mob_cap, green_hat, red_vest, red_skirt"
-    full: "__touhou/chen/chara__, __touhou/chen/outfit__"
+    full: "__2hu/chen/chara__, __2hu/chen/outfit__"
   alice:
     chara: " alice_margatroid, touhou, blonde hair, blue eyes, __boob/small/medium__"
     outfit: "red_hairband, lolita_hairband, hair_bow, blue_dress, white_capelet, red_bowtie"
-    full: "__touhou/alice/chara__, __touhou/alice/outfit__"
+    full: "__2hu/alice/chara__, __2hu/alice/outfit__"
   lily:
     chara: "lily_white, touhou, blonde hair, blue eyes, long hair, fairy_wings, __boob/flat/medium__"
     outfit: "white_hat, white_dress, white_capelet, long_sleeves, wide_sleeves, red_bowtie"
-    full: "__touhou/lily/chara__, __touhou/lily/outfit__"
+    full: "__2hu/lily/chara__, __2hu/lily/outfit__"
   lunasa:
     chara: "lunasa_prismriver, touhou, blonde hair, yellow eyes, __boob/small/medium__"
     outfit: "hat, long_sleeves, black_hat, black_skirt, skirt_set, white_shirt, black_vest"
-    full: "__touhou/lunasa/chara__, __touhou/lunasa/outfit__"
+    full: "__2hu/lunasa/chara__, __2hu/lunasa/outfit__"
   merlin:
     chara: "merlin_prismriver, touhou, light blue hair, blue eyes, __boob/small/large__"
     outfit: "hat, long_sleeves, pink_hat, pink_skirt, pink_shirt"
-    full: "__touhou/merlin/chara__, __touhou/merlin/outfit__"
+    full: "__2hu/merlin/chara__, __2hu/merlin/outfit__"
   youmu:
     chara: "konpaku_youmu, touhou, grey hair, blue eyes, __boob/small/medium__"
     outfit: "black_hairband, white_shirt, green_vest, green_skirt, black_ribbon, collared_shirt, hair_ribbon"
-    full: "__touhou/youmu/chara__, __touhou/youmu/outfit__"
+    full: "__2hu/youmu/chara__, __2hu/youmu/outfit__"
   yuyuko:
     chara: "saigyouji_yuyuko, touhou, pink hair, pink eyes, __boob/large/large__"
     outfit: "mob_cap, triangular_headpiece, blue_hat, blue_kimono, long_sleeves, wide_sleeves, frilled_kimono"
-    full: "__touhou/yuyuko/chara__, __touhou/yuyuko/outfit__"
+    full: "__2hu/yuyuko/chara__, __2hu/yuyuko/outfit__"
   ran:
     chara: "yakumo_ran, touhou, blonde hair, yellow eyes, kitsune, multiple_tails, __boob/large/large__"
     outfit: "mob_cap, white_dress, long_sleeves, white_hat, blue_tabard, wide_sleeves"
-    full: "__touhou/ran/chara__, __touhou/ran/outfit__"
+    full: "__2hu/ran/chara__, __2hu/ran/outfit__"
   yukari:
     chara: "yakumo_yukari, touhou, blonde hair, purple eyes, long hair, __boob/large/large__"
     outfit: "mob_cap, hat_ribbon, white_hat, red_ribbon, red_bow, hair_bow, purple_dress, white_gloves, white_dress"
-    full: "__touhou/yukari/chara__, __touhou/yukari/outfit__"
+    full: "__2hu/yukari/chara__, __2hu/yukari/outfit__"
   renko:
     chara: "usami_renko, touhou, brown hair, brown eyes, __boob/small/medium__"
     outfit: "white_shirt, black_hat, white_bow, hat_bow, black_skirt, long_sleeves, fedora, hair_bow, red_necktie, collared_shirt, black_capelet"
-    full: "__touhou/renko/chara__, __touhou/renko/outfit__"
+    full: "__2hu/renko/chara__, __2hu/renko/outfit__"
   maribel:
     chara: "maribel_hearn, touhou, blonde hair, purple eyes, __boob/small/medium__"
     outfit: "mob_cap, purple_dress, white_hat, long_sleeves, collared_dress, red_ribbon"
-    full: "__touhou/maribel/chara__, __touhou/maribel/outfit__"
+    full: "__2hu/maribel/chara__, __2hu/maribel/outfit__"
   suika:
     chara: "ibuki_suika, touhou, orange hair, orange eyes, brown horns, long hair, __boob/small/small__"
     outfit: "hair_bow, white_shirt, red_bow, horn_ribbon, chain, sleeveless_shirt, purple_skirt"
-    full: "__touhou/suika/chara__, __touhou/suika/outfit__"
+    full: "__2hu/suika/chara__, __2hu/suika/outfit__"
   wriggle:
     chara: "wriggle_nightbug, touhou, antennae, green hair, swept bangs, green eyes, __boob/small/small__"
     outfit: "white_shirt, black_cape, collared_shirt, long_sleeves, red_cape, black shorts"
-    full: "__touhou/wriggle/chara__, __touhou/wriggle/outfit__"
+    full: "__2hu/wriggle/chara__, __2hu/wriggle/outfit__"
   mystia:
     chara: "mystia_lorelei, touhou, pink hair, brown eyes, bird ears, bird_wings, white_wings, __boob/small/medium__"
     outfit: "brown_dress, winged_hat, brown_hat, long_sleeves, white_shirt, sleeve_garter, collared_shirt, frilled_sleeves"
-    full: "__touhou/mystia/chara__, __touhou/mystia/outfit__"
+    full: "__2hu/mystia/chara__, __2hu/mystia/outfit__"
   x-keine:
     chara: "ex-keine, kamishirasawa_keine, touhou, long hair, green hair, red eyes, __boob/large/large__"
     outfit: "green_dress, horn_ribbon, puffy_short_sleeves, horn_bow, red_bow, cleavage"
-    full: "__touhou/x-keine/chara__, __touhou/x-keine/outfit__"
+    full: "__2hu/x-keine/chara__, __2hu/x-keine/outfit__"
   tewi:
     chara: "inaba_tewi, touhou, black hair, red eyes, rabbit_girl, __boob/flat/small__"
     outfit: "pink_dress, carrot_necklace, puffy_short_sleeves"
-    full: "__touhou/tewi/chara__, __touhou/tewi/outfit__"
+    full: "__2hu/tewi/chara__, __2hu/tewi/outfit__"
   reisen:
     chara: "reisen_udongein_inaba, touhou, long hair, purple hair, red eyes, rabbit_girl, __boob/medium/large__"
     outfit: "red_necktie, white_shirt, collared_shirt, long_sleeves, black_jacket, pink_skirt"
-    full: "__touhou/reisen/chara__, __touhou/reisen/outfit__"
+    full: "__2hu/reisen/chara__, __2hu/reisen/outfit__"
   eirin:
     chara: "yagokoro_eirin, touhou, long hair, white hair, grey eyes, __boob/large/large__"
     outfit: "nurse_cap, blue_dress, blue_hat, red_cross, two-tone_dress, single_braid, constellation_print, red_dress"
-    full: "__touhou/eirin/chara__, __touhou/eirin/outfit__"
+    full: "__2hu/eirin/chara__, __2hu/eirin/outfit__"
   kaguya:
     chara: "houraisan_kaguya, touhou, long hair, black hair, brown eyes, hime_cut, sidelocks, __boob/medium/medium__"
     outfit: "pink_shirt, long_sleeves, wide_sleeves, red_skirt, collared_shirt, long_skirt, jeweled_branch_of_hourai"
-    full: "__touhou/kaguya/chara__, __touhou/kaguya/outfit__"
+    full: "__2hu/kaguya/chara__, __2hu/kaguya/outfit__"
   mokou:
     chara: "fujiwara_no_mokou, touhou, long hair, white hair, red eyes, __boob/medium/medium__"
     outfit: "hair_bow, white_shirt, white_bow, red_pants, collared_shirt, suspenders, long_sleeves, ofuda_on_clothes"
-    full: "__touhou/mokou/chara__, __touhou/mokou/outfit__"
+    full: "__2hu/mokou/chara__, __2hu/mokou/outfit__"
   luna:
     chara: "luna_child, touhou, blonde hair, red eyes, fairy_wings, __boob/flat/flat__"
     outfit: "white_dress, white_hat, wide_sleeves, long_sleeves, hat, black_bowtie"
-    full: "__touhou/luna/chara__, __touhou/luna/outfit__"
+    full: "__2hu/luna/chara__, __2hu/luna/outfit__"
   star:
     chara: "star_sapphire, touhou, long hair, brown hair, brown eyes, fairy_wings, sidelocks, __boob/flat/flat__"
     outfit: "hair_bow, blue_bow, blue_dress, long_sleeves, wide_sleeves"
-    full: "__touhou/star/chara__, __touhou/star/outfit__"
+    full: "__2hu/star/chara__, __2hu/star/outfit__"
   sunny:
     chara: "sunny_milk, touhou, red hair, blue eyes, fairy_wings, fang, two_side_up, __boob/flat/small__"
     outfit: "headdress, hair_bow, long_sleeves, ascot, yellow_ascot"
-    full: "__touhou/sunny/chara__, __touhou/sunny/outfit__"
+    full: "__2hu/sunny/chara__, __2hu/sunny/outfit__"
   yuuka:
     chara: "kazami_yuuka, touhou, green hair, red eyes, __boob/medium/large__"
     outfit: "white_shirt, red_vest, yellow_ascot, long_sleeves, plaid_vest, red_skirt, collared_shirt, plaid_skirt"
-    full: "__touhou/yuuka/chara__, __touhou/yuuka/outfit__"
+    full: "__2hu/yuuka/chara__, __2hu/yuuka/outfit__"
   medicine:
     chara: "medicine_melancholy, touhou, blonde hair, blue eyes, __boob/small/medium__"
     outfit: "red_ribbon, hair_ribbon, red_skirt, puffy_short_sleeves, black_shirt, red_bowtie, frilled_shirt_collar, short_sleeves, frilled_sleeves"
-    full: "__touhou/medicine/chara__, __touhou/medicine/outfit__"
+    full: "__2hu/medicine/chara__, __2hu/medicine/outfit__"
   komachi:
     chara: "onozuka_komachi, touhou, red hair, red eyes, two_side_up, __boob/medium/large__"
     outfit: "hair_bobbles, obijime, obidome, blue_dress, cleavage, short_sleeves, coin_on_string"
-    full: "__touhou/komachi/chara__, __touhou/komachi/outfit__"
+    full: "__2hu/komachi/chara__, __2hu/komachi/outfit__"
   aya:
     chara: "shameimaru_aya, touhou, black hair, red eyes, black_wings, bird_wings, frilled_skirt, feathered_wings, __boob/medium/medium__"
     outfit: "tokin_hat, red_hat, white_shirt, pom_pom_\\(clothes\\), black_skirt, collared_shirt, puffy_short_sleeves"
-    full: "__touhou/aya/chara__, __touhou/aya/outfit__"
+    full: "__2hu/aya/chara__, __2hu/aya/outfit__"
   eiki:
     chara: "shiki_eiki, touhou, green hair, blue eyes, __boob/small/small__"
     outfit: "frilled_hat, blue_vest, long_sleeves, black_skirt, white_shirt, epaulettes, blue_hat"
-    full: "__touhou/eiki/chara__, __touhou/eiki/outfit__"
+    full: "__2hu/eiki/chara__, __2hu/eiki/outfit__"
   akyuu:
     chara: "hieda_no_akyuu, touhou, purple hair, purple eyes, __boob/flat/medium__"
     outfit: "hair_flower, green_kimono, long_sleeves, wide_sleeves, white_flower, red_skirt, yellow_kimono, floral_print"
-    full: "__touhou/akyuu/chara__, __touhou/akyuu/outfit__"
+    full: "__2hu/akyuu/chara__, __2hu/akyuu/outfit__"
   yorihime:
     chara: "watatsuki_no_yorihime, touhou, long hair, purple hair, red eyes, __boob/medium/medium__"
     outfit: "hair_ribbon, hair_bow, yellow_ribbon, red_dress, belt, puffy_short_sleeves, white_shirt, bracelet"
-    full: "__touhou/yorihime/chara__, __touhou/yorihime/outfit__"
+    full: "__2hu/yorihime/chara__, __2hu/yorihime/outfit__"
   shizuha:
     chara: "aki_shizuha, touhou, blonde hair, orange eyes, __boob/small/medium__"
     outfit: "long_sleeves, autumn_leaves, maple_leaf, red_skirt, buttons, red_shirt, collared_shirt"
-    full: "__touhou/shizuha/chara__, __touhou/shizuha/outfit__"
+    full: "__2hu/shizuha/chara__, __2hu/shizuha/outfit__"
   minoriko:
     chara: "aki_minoriko, touhou, blonde hair, red eyes, wide_sleeves __boob/medium/large__"
     outfit: "mob_cap, red_hat, grapes, red_apron, grape_hat_ornament, yellow_shirt, long_sleeves, black_skirt, fruit_hat_ornament"
-    full: "__touhou/minoriko/chara__, __touhou/minoriko/outfit__"
+    full: "__2hu/minoriko/chara__, __2hu/minoriko/outfit__"
   hina:
     chara: "kagiyama_hina, touhou, green hair, green eyes, __boob/small/medium__"
     outfit: "hair_ribbon, red_ribbon, frilled_ribbon, red_bow, hair_bow, frilled_bow, puffy_short_sleeves, arm_ribbon, red_dress, frilled_dress"
-    full: "__touhou/hina/chara__, __touhou/hina/outfit__"
+    full: "__2hu/hina/chara__, __2hu/hina/outfit__"
   nitori:
     chara: "kawashiro_nitori, touhou, blue hair, blue eyes, two_side_up, __boob/small/large__"
     outfit: "hair_bobbles, green_hat, flat_cap, key, blue_skirt, blue_shirt, backpack, long_sleeves"
-    full: "__touhou/nitori/chara__, __touhou/nitori/outfit__"
+    full: "__2hu/nitori/chara__, __2hu/nitori/outfit__"
   momiji:
     chara: "inubashiri_momiji, touhou, white hair, red eyes, wolf_girl, animal_ear_fluff, __boob/medium/medium__"
     outfit: "tokin_hat, detached_sleeves, pom_pom_\\(clothes\\), red_hat, white_shirt, black_skirt, bare_shoulders"
-    full: "__touhou/momiji/chara__, __touhou/momiji/outfit__"
+    full: "__2hu/momiji/chara__, __2hu/momiji/outfit__"
   sanae:
     chara: "kochiya_sanae, touhou, long hair, green hair, green eyes, __boob/medium/large__"
     outfit: "detached_sleeves, white_shirt, blue_skirt, single_hair_tube, bare_shoulders, hair_tubes, collared_shirt"
-    full: "__touhou/sanae/chara__, __touhou/sanae/outfit__"
+    full: "__2hu/sanae/chara__, __2hu/sanae/outfit__"
   kanako:
     chara: "yasaka_kanako, touhou, purple hair, red eyes, __boob/large/large__"
     outfit: "red_shirt, mirror, shimenawa, short_over_long_sleeves, black_skirt, shide, long_skirt, autumn_leaves"
-    full: "__touhou/kanako/chara__, __touhou/kanako/outfit__"
+    full: "__2hu/kanako/chara__, __2hu/kanako/outfit__"
   suwako:
     chara: "moriya_suwako, touhou, blonde hair, grey eyes, __boob/flat/small__"
     outfit: "wide_sleeves, long_sleeves, purple_vest, white_shirt, brown_hat, purple_skirt, red_ribbon, white_thighhighs, frog_print"
-    full: "__touhou/suwako/chara__, __touhou/suwako/outfit__"
+    full: "__2hu/suwako/chara__, __2hu/suwako/outfit__"
   iku:
     chara: "nagae_iku, touhou, purple hair, red eyes, __boob/large/large__"
     outfit: "black_hat, hat_bow, black_skirt, long_sleeves, red_bow, white_shirt, frilled_shawl, white_capelet, frilled_capelet"
-    full: "__touhou/iku/chara__, __touhou/iku/outfit__"
+    full: "__2hu/iku/chara__, __2hu/iku/outfit__"
   tenshi:
     chara: "hinanawi_tenshi, touhou, long hair, blue hair, red eyes, __boob/flat/small__"
     outfit: "white_shirt, peach_hat_ornament, black_hat, blue_skirt, red_bowtie, puffy_short_sleeves, collared_shirt, center_frills"
-    full: "__touhou/tenshi/chara__, __touhou/tenshi/outfit__"
+    full: "__2hu/tenshi/chara__, __2hu/tenshi/outfit__"
   kisume:
     chara: "kisume, touhou, green hair, green eyes, two_side_up, __boob/flat/small__"
     outfit: "hair_bobbles, white_kimono, long_sleeves, wide_sleeves"
-    full: "__touhou/kisume/chara__, __touhou/kisume/outfit__"
+    full: "__2hu/kisume/chara__, __2hu/kisume/outfit__"
   yamame:
     chara: "kurodani_yamame, touhou, blonde hair, brown eyes, __boob/medium/medium__"
     outfit: "hair_bow, long_sleeves, brown_dress, black_bow, black_shirt, pinafore_dress"
-    full: "__touhou/yamame/chara__, __touhou/yamame/outfit__"
+    full: "__2hu/yamame/chara__, __2hu/yamame/outfit__"
   parsee:
     chara: "mizuhashi_parsee, touhou, blonde hair, green eyes, pointy ears, __boob/medium/medium__"
     outfit: "white_scarf, brown_shirt, short_sleeves, arm_warmers, black_shirt, black_skirt, white_sash"
-    full: "__touhou/parsee/chara__, __touhou/parsee/outfit__"
+    full: "__2hu/parsee/chara__, __2hu/parsee/outfit__"
   yuugi:
     chara: "hoshiguma_yuugi_\\(kimono\\), touhou, long hair, blonde hair, red eyes, single_horn, __boob/large/large__"
     outfit: "off_shoulder, bare_shoulders, blue_kimono, cleavage, collarbone, obi, long_sleeves"
-    full: "__touhou/yuugi/chara__, __touhou/yuugi/outfit__"
+    full: "__2hu/yuugi/chara__, __2hu/yuugi/outfit__"
   satori:
     chara: "komeiji_satori, touhou, purple hair, purple eyes, third_eye, eyeball, __boob/small/small__"
     outfit: "black_hairband, blue_shirt, long_sleeves, frilled_sleeves, wide_sleeves, frilled_shirt_collar, pink_skirt, heart_button"
-    full: "__touhou/satori/chara__, __touhou/satori/outfit__"
+    full: "__2hu/satori/chara__, __2hu/satori/outfit__"
   rin:
     chara: "kaenbyou_rin, touhou, long hair, red hair, red eyes, twin_braids, cat_girl, extra ears, two_tails, nekomata, __boob/medium/medium__"
     outfit: "hair_bow, black_bow, green_dress, black_dress"
-    full: "__touhou/rin/chara__, __touhou/rin/outfit__"
+    full: "__2hu/rin/chara__, __2hu/rin/outfit__"
   utsuho:
     chara: "reiuji_utsuho, touhou, long hair, black hair, brown eyes, black_wings, bird_wings, __boob/medium/large__"
     outfit: "hair_bow, green_bow, white_shirt, green_skirt, arm_cannon, collared_shirt"
-    full: "__touhou/utsuho/chara__, __touhou/utsuho/outfit__"
+    full: "__2hu/utsuho/chara__, __2hu/utsuho/outfit__"
   koishi:
     chara: "komeiji_koishi, touhou, green hair, green eyes, third_eye, eyeball, __boob/flat/small__"
     outfit: "black_hat, yellow_shirt, frilled_sleeves, frilled_shirt_collar, green_skirt, hat_bow, wide_sleeves, yellow_bow, hat_ribbon, blouse, heart_of_string, diamond_button"
-    full: "__touhou/koishi/chara__, __touhou/koishi/outfit__"
+    full: "__2hu/koishi/chara__, __2hu/koishi/outfit__"
   nazrin:
     chara: "nazrin, touhou, grey hair, red eyes, mouse_girl, __boob/flat/small__"
     outfit: "long_sleeves, pendant, white_shirt, blue_capelet"
-    full: "__touhou/nazrin/chara__, __touhou/nazrin/outfit__"
+    full: "__2hu/nazrin/chara__, __2hu/nazrin/outfit__"
   kogasa:
     chara: "tatara_kogasa, touhou, blue hair, red eyes, blue eyes, heterochromia, __boob/medium/large__"
     outfit: "white_shirt, blue_vest, blue_skirt, long_sleeves, juliet_sleeves"
-    full: "__touhou/kogasa/chara__, __touhou/kogasa/outfit__"
+    full: "__2hu/kogasa/chara__, __2hu/kogasa/outfit__"
   ichirin:
     chara: "kumoi_ichirin, touhou, blue hair, blue eyes, __boob/medium/large__"
     outfit: "hood, kesa, long_sleeves, wide_sleeves, hoop, pendant, ring"
-    full: "__touhou/ichirin/chara__, __touhou/ichirin/outfit__"
+    full: "__2hu/ichirin/chara__, __2hu/ichirin/outfit__"
   minamitsu:
     chara: "murasa_minamitsu, touhou, black hair, green eyes, __boob/small/medium__"
     outfit: "sailor_hat, white_shirt, red_neckerchief, white_shorts, white_hat, short_sleeves, sailor_shirt, green_sailor_collar"
-    full: "__touhou/minamitsu/chara__, __touhou/minamitsu/outfit__"
+    full: "__2hu/minamitsu/chara__, __2hu/minamitsu/outfit__"
   shou:
     chara: "toramaru_shou, touhou, blonde hair, black hair, multicolored hair, __boob/medium/medium__"
     outfit: "long_sleeves, tiger_print, wide_sleeves, bishamonten's_pagoda, bishamonten's_spear, red_dress, black_ribbon, hagoromo, o-ring"
-    full: "__touhou/shou/chara__, __touhou/shou/outfit__"
+    full: "__2hu/shou/chara__, __2hu/shou/outfit__"
   byakuren:
     chara: "hijiri_byakuren, touhou, purple hair, gradient hair, colored tips, long hair, purple eyes, __boob/large/large__"
     outfit: "white_dress, cross-laced_clothes, layered_dress, black_dress, juliet_sleeves, sorcerer's_sutra_scroll"
-    full: "__touhou/byakuren/chara__, __touhou/byakuren/outfit__"
+    full: "__2hu/byakuren/chara__, __2hu/byakuren/outfit__"
   nue:
     chara: "houjuu_nue, touhou, black hair, red eyes, pointy ears, asymmetrical_wings, red_wings, blue_wings, __boob/small/medium__"
     outfit: "black_dress, short_sleeves, black_thighhighs, red_bowtie, center_frills"
-    full: "__touhou/nue/chara__, __touhou/nue/outfit__"
+    full: "__2hu/nue/chara__, __2hu/nue/outfit__"
   hatate:
     chara: "himekaidou_hatate, touhou, long hair, brown hair, twintails, black eyes, __boob/medium/medium__"
     outfit: "tokin_hat, purple_hat, white_shirt, checkered_skirt, collared_shirt, puffy_short_sleeves, purple_skirt, black_necktie"
-    full: "__touhou/hatate/chara__, __touhou/hatate/outfit__"
+    full: "__2hu/hatate/chara__, __2hu/hatate/outfit__"
   kasen:
     chara: "ibaraki_kasen, touhou, pink hair, red eyes, double buns, bandaged_arm, shackles, __boob/medium/large__"
     outfit: "bun_cover, tabard, green_skirt, white_shirt, pink_rose, short_sleeves"
-    full: "__touhou/kasen/chara__, __touhou/kasen/outfit__"
+    full: "__2hu/kasen/chara__, __2hu/kasen/outfit__"
   kyouko:
     chara: "kasodani_kyouko, touhou, green hair, green eyes, __boob/small/small__"
     outfit: "long_sleeves, pink_dress, brown_dress"
-    full: "__touhou/kyouko/chara__, __touhou/kyouko/outfit__"
+    full: "__2hu/kyouko/chara__, __2hu/kyouko/outfit__"
   yoshika:
     chara: "miyako_yoshika, touhou, purple hair, purple eyes, empty eyes, no pupils, colored skin, white skin, jiangshi, __boob/small/medium__"
     outfit: "ofuda, red_shirt, star_hat_ornament, cabbie_hat, short_sleeves, black_skirt, tangzhuang, purple_hat, neck_ribbon, black_ribbon"
-    full: "__touhou/yoshika/chara__, __touhou/yoshika/outfit__"
+    full: "__2hu/yoshika/chara__, __2hu/yoshika/outfit__"
   seiga:
     chara: "kaku_seiga, touhou, blue hair, blue eyes, hair_rings, __boob/medium/large__"
     outfit: "hair_stick, blue_dress, white_vest, hagoromo, puffy_short_sleeves, cleavage"
-    full: "__touhou/seiga/chara__, __touhou/seiga/outfit__"
+    full: "__2hu/seiga/chara__, __2hu/seiga/outfit__"
   tojiko:
     chara: "soga_no_tojiko, touhou, green hair, green eyes, __boob/medium/medium__"
     outfit: "tate_eboshi, black_hat, green_dress, long_sleeves, ofuda_on_clothes, cross-laced_clothes"
-    full: "__touhou/tojiko/chara__, __touhou/tojiko/outfit__"
+    full: "__2hu/tojiko/chara__, __2hu/tojiko/outfit__"
   futo:
     chara: "mononobe_no_futo, touhou, long hair, grey hair, grey eyes, ponytail, __boob/small/small__"
     outfit: "tate_eboshi, kariginu, ribbon-trimmed_sleeves, wide_sleeves, long_sleeves, pom_pom_\\(clothes\\), blue_hat, blue_skirt, black_hat"
-    full: "__touhou/futo/chara__, __touhou/futo/outfit__"
+    full: "__2hu/futo/chara__, __2hu/futo/outfit__"
   miko:
     chara: "toyosatomimi_no_miko, touhou, blonde hair, yellow eyes, __boob/small/small__"
     outfit: "earmuffs, bracelet, sleeveless_shirt, purple_skirt, purple_cape"
-    full: "__touhou/miko/chara__, __touhou/miko/outfit__"
+    full: "__2hu/miko/chara__, __2hu/miko/outfit__"
   mamizou:
     chara: "futatsuiwa_mamizou, touhou, raccoon_girl, brown hair, brown eyes, __boob/medium/large__"
     outfit: "glasses, leaf_on_head, brown_shirt, short_sleeves, brown_skirt"
-    full: "__touhou/mamizou/chara__, __touhou/mamizou/outfit__"
+    full: "__2hu/mamizou/chara__, __2hu/mamizou/outfit__"
   kosuzu:
     chara: "motoori_kosuzu, touhou, red hair, red eyes, two_side_up, __boob/small/small__"
     outfit: "hair_bell, checkered_kimono, yellow_apron, long_sleeves, wide_sleeves, jingle_bell, green_skirt"
-    full: "__touhou/kosuzu/chara__, __touhou/kosuzu/outfit__"
+    full: "__2hu/kosuzu/chara__, __2hu/kosuzu/outfit__"
   kokoro:
     chara: "hata_no_kokoro, touhou, long hair, pink hair, pink eyes, __boob/small/medium__"
     outfit: "plaid_shirt, long_sleeves, mask_on_head, fox_mask, orange_skirt, bubble_skirt, expressionless, collared_shirt, aqua_shirt"
-    full: "__touhou/kokoro/chara__, __touhou/kokoro/outfit__"
+    full: "__2hu/kokoro/chara__, __2hu/kokoro/outfit__"
   wakasagihime:
     chara: "wakasagihime, touhou, blue hair, blue eyes, head_fins, drill_sidelocks, __boob/medium/large__"
     outfit: "green_kimono, long_sleeves, wide_sleeves, frilled_kimono, obi"
-    full: "__touhou/wakasagihime/chara__, __touhou/wakasagihime/outfit__"
+    full: "__2hu/wakasagihime/chara__, __2hu/wakasagihime/outfit__"
   sekibanki:
     chara: "sekibanki, touhou, red hair, red eyes, __boob/small/medium__"
     outfit: "hair_bow, blue_bow, long_sleeves, black_shirt, red_skirt, red_cape, cloak"
-    full: "__touhou/sekibanki/chara__, __touhou/sekibanki/outfit__"
+    full: "__2hu/sekibanki/chara__, __2hu/sekibanki/outfit__"
   kagerou:
     chara: "imaizumi_kagerou, touhou, wolf_girl, brown hair, red eyes, animal_ear_fluff, __boob/medium/large__"
     outfit: "white_dress, long_sleeves, red_nails, brooch"
-    full: "__touhou/kagerou/chara__, __touhou/kagerou/outfit__"
+    full: "__2hu/kagerou/chara__, __2hu/kagerou/outfit__"
   benben:
     chara: "tsukumo_benben, touhou, long hair, purple hair, purple eyes, low twintails, __boob/small/medium__"
     outfit: "hair_flower, long_sleeves, brown_dress, chain, white_flower"
-    full: "__touhou/benben/chara__, __touhou/benben/outfit__"
+    full: "__2hu/benben/chara__, __2hu/benben/outfit__"
   seija:
     chara: "kijin_seija, touhou, cone horns, black hair, multicolored hair, streaked hair, red eyes, __boob/small/medium__"
     outfit: "white_dress, short_sleeves, puffy_short_sleeves, white_shirt, bracelet"
-    full: "__touhou/seija/chara__, __touhou/seija/outfit__"
+    full: "__2hu/seija/chara__, __2hu/seija/outfit__"
   shinmyoumaru:
     chara: "sukuna_shinmyoumaru, touhou, purple hair, purple eyes, __boob/flat/flat__"
     outfit: "bowl_hat, long_sleeves, wide_sleeves, red_kimono, obi, black_hat"
-    full: "__touhou/shinmyoumaru/chara__, __touhou/shinmyoumaru/outfit__"
+    full: "__2hu/shinmyoumaru/chara__, __2hu/shinmyoumaru/outfit__"
   raiko:
     chara: "horikawa_raiko, touhou, red hair, red eyes, __boob/medium/medium__"
     outfit: "purple_necktie, white_jacket, long_sleeves, plaid_shirt, black_shirt, white_skirt, collared_shirt"
-    full: "__touhou/raiko/chara__, __touhou/raiko/outfit__"
+    full: "__2hu/raiko/chara__, __2hu/raiko/outfit__"
   sumireko:
     chara: "usami_sumireko, touhou, brown hair, brown eyes, low twintails, __boob/small/medium__"
     outfit: "glasses, red-framed_eyewear, black_hat, white_shirt, long_sleeves, plaid_vest, purple_vest, hat_bow, plaid_skirt, purple_skirt, under-rim_eyewear, white_bow"
-    full: "__touhou/sumireko/chara__, __touhou/sumireko/outfit__"
+    full: "__2hu/sumireko/chara__, __2hu/sumireko/outfit__"
   doremy:
     chara: "doremy_sweet, touhou, blue hair, blue eyes, __boob/medium/medium__"
     outfit: "pom_pom_\\(clothes\\), nightcap, red_hat, white_dress, black_capelet, black_dress, multicolored_dress"
-    full: "__touhou/doremy/chara__, __touhou/doremy/outfit__"
+    full: "__2hu/doremy/chara__, __2hu/doremy/outfit__"
   sagume:
     chara: "kishin_sagume, touhou, white hair, red eyes, single wing, feathered_wings, __boob/medium/medium__"
     outfit: "purple_dress, long_sleeves, red_bowtie, white jacket, open_jacket, french_braid"
-    full: "__touhou/sagume/chara__, __touhou/sagume/outfit__"
+    full: "__2hu/sagume/chara__, __2hu/sagume/outfit__"
   clownpiece:
     chara: "clown_piece, touhou, long hair, blonde hair, pink eyes, fairy_wings, __boob/flat/small__"
     outfit: "jester_cap, star_print, striped_clothes, american_flag_dress, polka_dot_headwear, american_flag_legwear, striped_dress, short_sleeves, purple_hat, neck_ruff"
-    full: "__touhou/clownpiece/chara__, __touhou/clownpiece/outfit__"
+    full: "__2hu/clownpiece/chara__, __2hu/clownpiece/outfit__"
   hecatia:
     chara: "hecatia_lapislazuli, touhou, red hair, red eyes, __boob/medium/medium__"
     outfit: "black_shirt, off-shoulder_shirt, clothes_writing, earth_\\(ornament\\), moon_\\(ornament\\), t-shirt, bare_shoulders, short_sleeves, multicolored_skirt, plaid_skirt, underworld_\\(ornament\\), black_headwear"
-    full: "__touhou/hecatia/chara__, __touhou/hecatia/outfit__"
+    full: "__2hu/hecatia/chara__, __2hu/hecatia/outfit__"
   joon:
     chara: "yorigami_jo'on, touhou, light brown hair, orange eyes, twin_drills, __boob/medium/medium__"
     outfit: "eyewear_on_head, sunglasses, earrings, round_eyewear, white_dress, necklace, top_hat, purple_coat, black_hat"
-    full: "__touhou/joon/chara__, __touhou/joon/outfit__"
+    full: "__2hu/joon/chara__, __2hu/joon/outfit__"
   shion:
     chara: "yorigami_shion, touhou, long hair, blue hair, blue eyes, __boob/small/medium__"
     outfit: "hair_bow, blue_bow, grey_hoodie, blue_skirt, short_sleeves, bangle"
-    full: "__touhou/shion/chara__, __touhou/shion/outfit__"
+    full: "__2hu/shion/chara__, __2hu/shion/outfit__"
   eternity:
     chara: "eternity_larva, touhou, aqua hair, brown eyes, insect_wings, butterfly_wings, antennae, __boob/flat/medium__"
     outfit: "leaf_on_head, green_dress, short_sleeves, multicolored_dress"
-    full: "__touhou/eternity/chara__, __touhou/eternity/outfit__"
+    full: "__2hu/eternity/chara__, __2hu/eternity/outfit__"
   aunn:
     chara: "komano_aunn, touhou, long hair, curly hair, aqua hair, green eyes, single_horn, __boob/flat/medium__"
     outfit: "kariyushi_shirt, white_shorts, cloud_print, short_sleeves, collared_shirt, red_shirt"
-    full: "__touhou/aunn/chara__, __touhou/aunn/outfit__"
+    full: "__2hu/aunn/chara__, __2hu/aunn/outfit__"
   okina:
     chara: "matara_okina, touhou, long hair, blonde hair, yellow eyes, __boob/medium/medium__"
     outfit: "wide_sleeves, constellation_print, green_skirt, tabard, black_hat, long_sleeves, detached_sleeves, white_shirt, orange_sleeves, brown_hat"
-    full: "__touhou/okina/chara__, __touhou/okina/outfit__"
+    full: "__2hu/okina/chara__, __2hu/okina/outfit__"
   kutaka:
     chara: "niwatari_kutaka, touhou, blonde hair, red hair, multicolored hair, red eyes, bird_wings, yellow_wings, feathered_wings, __boob/small/medium__"
     outfit: "bird_on_head, chick, white_shirt, orange_dress, short_sleeves"
-    full: "__touhou/kutaka/chara__, __touhou/kutaka/outfit__"
+    full: "__2hu/kutaka/chara__, __2hu/kutaka/outfit__"
   yachie:
     chara: "kicchou_yachie, touhou, blonde hair, red eyes, turtle_shell, antlers, dragon_girl, __boob/medium/medium__"
     outfit: "blue_shirt, short_sleeves, green_skirt, collarbone"
-    full: "__touhou/yachie/chara__, __touhou/yachie/outfit__"
+    full: "__2hu/yachie/chara__, __2hu/yachie/outfit__"
   mayumi:
     chara: "joutouguu_mayumi, touhou, yellow hair, yellow eyes, double buns, __boob/small/medium__"
     outfit: "hair_ribbon, white_ribbon, yellow_dress, puffy_short_sleeves, armored_dress, vambraces, white_shirt"
-    full: "__touhou/mayumi/chara__, __touhou/mayumi/outfit__"
+    full: "__2hu/mayumi/chara__, __2hu/mayumi/outfit__"
   keiki:
     chara: "haniyasushin_keiki, touhou, long hair, blue hair, pink eyes, __boob/medium/medium__"
     outfit: "head_scarf, green_headwear, green_apron, yellow_dress, magatama_necklace, single_strap, arm_ribbon, blue_ribbon"
-    full: "__touhou/keiki/chara__, __touhou/keiki/outfit__"
+    full: "__2hu/keiki/chara__, __2hu/keiki/outfit__"
   yuuma:
     chara: "toutetsu_yuuma, touhou, sheep horns, red horns, pointy ears, curly hair, white hair, red eyes, sharp_teeth, __boob/small/medium__"
     outfit: "earrings, horn_ribbon, blue_dress, red_sleeves, blue_ribbon, detached_sleeves, meandros, horizontal_pupils, bare_shoulders"
-    full: "__touhou/yuuma/chara__, __touhou/yuuma/outfit__"
+    full: "__2hu/yuuma/chara__, __2hu/yuuma/outfit__"
   mike:
     chara: "goutokuji_mike, touhou, white hair, streaked hair, multicolored hair, cat_girl, calico, __boob/flat/medium__"
     outfit: "jingle_bell, neck_bell, multicolored_shirt, crop_top, patchwork_clothes"
-    full: "__touhou/mike/chara__, __touhou/mike/outfit__"
+    full: "__2hu/mike/chara__, __2hu/mike/outfit__"
   chimata:
     chara: "tenkyuu_chimata, touhou, dark blue hair, purple eyes, __boob/medium/medium__"
     outfit: "multicolored_hairband, long_sleeves, multicolored_dress, rainbow_gradient, patchwork_clothes, white_cloak, sky_print, white_cape"
-    full: "__touhou/chimata/chara__, __touhou/chimata/outfit__"
+    full: "__2hu/chimata/chara__, __2hu/chimata/outfit__"

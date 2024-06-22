@@ -9,7 +9,7 @@ eye:
   |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
   }"
 hair: "__hairColor__, __hairLength__, __hairTexture__, __hairStyle__, __hairBang__{, __hairExtraTop__|2::}{, __hairExtraFront__|}{, __hairExtraSide__|3::}{, __hairExtraBottom__|3::}"
-action: "{-2$$, $$__facial__|__facial__}, (__looking__), __pose__"
+action: "{-2$$, $$__facial__|__facial__}, (__looking__, __pose__)"
 boob:
   flat:
     flat: "flat chest"
@@ -28,6 +28,7 @@ boob:
     small: "[large:small:0.2] breasts"
     medium: "[large:medium:0.2] breasts"
     large: "large breasts"
+android: "android, mechanical arms, mechanical legs, robot joints, robot ears, mechanical ears"
 hairColor:
   "{\
   2::__colorHair__ hair\
@@ -256,7 +257,7 @@ pose:
   10::__poseA__, __poseT__, __poseBL__|\
   6::__poseA__, __poseTB__, __poseL__|\
   2::__poseA__, __poseTBL__|\
-  __poseATBL__|\
+  __poseATBL__\
   }"
 poseAH1:
   - head rest

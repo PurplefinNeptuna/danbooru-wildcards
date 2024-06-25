@@ -3,5 +3,5 @@ location: "{__indoor__|__outdoor__}"
 action: "{-2$$, $$__facial__|__facial__}, __looking__, __pose__"
 og:
   chara: "__hair__, __eye__, __boob/*/*__"
-  outfit: "{__headacc__, |}__topwear__, __bottomwear__"
+  outfit: "{__headacc__, |}__clothing__{, __color__ __outwear__|2::}"
   full: "__og/chara__, __og/outfit__"

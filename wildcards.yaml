@@ -11,10 +11,19 @@ eye:
   |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
   }"
 hair: "__hairColor__, __hairLength__, __hairTexture__, __hairStyle__, __hairBang__{, __hairExtraTop__|2::}{, __hairExtraFront__|}{, __hairExtraSide__|3::}{, __hairExtraBottom__|3::}"
+clothing:
+  "{\
+  2::__topwear__, __bottomwear__\
+  |__dress__\
+  }"
+#topwear 40
+#bottomwear 40
+#dress 36
 topwear: "__color__ {3::__shirt__|2::__topwearOther__}"
 bottomwear: "__color__ {__pants__|__shorts__{|, __legwear__}|__skirt__}"
 shirt: "__shirtType__, __shirtStyle__"
 skirt: "{3::__skirtType__, __skirtLength__|__skirtShort__{|, __legwear__}}"
+dress: "__dressType__, __dressStyle__{|, __legwear__}"
 poseH1R: "{2::__poseH1__,|}"
 poseTR: "{2::__poseT__,|}"
 poseArm1: "{__poseAH1__|__poseH1R__ __poseA1__}"
@@ -30,6 +39,25 @@ pose:
   2::__poseA__, (__poseTBL__)|\
   __poseATBL__\
   }"
+camera: "__shot__{3::, __angle__|}{, __focus__|}"
+shot:
+  "{\
+  2::cowboy shot\
+  |portrait\
+  }"
+angle:
+  "{\
+  2::straight-on\
+  |from side\
+  |from above\
+  |dynamic angle\
+  |dutch angle\
+  }"
+focus:
+  "{\
+  navel focus\
+  |hip focus\
+  }"
 boob:
   flat:
     flat: "flat chest"
@@ -37,6 +65,7 @@ boob:
     medium: "[flat chest:medium breasts:0.2]"
     large: "[flat chest:large breasts:0.2]"
   small:
+    flat: "[small breasts:flat chest:0.2]"
     small: "small breasts"
     medium: "[small:medium:0.2] breasts"
     large: "[small:large:0.2] breasts"
@@ -45,7 +74,6 @@ boob:
     medium: "medium breasts"
     large: "[medium:large:0.2] breasts"
   large:
-    small: "[large:small:0.2] breasts"
     medium: "[large:medium:0.2] breasts"
     large: "large breasts"
 android: "android, mechanical arms, mechanical legs, robot joints, robot ears, mechanical ears, glowing eyes"
@@ -267,8 +295,6 @@ poseS:
 poseAH1:
   - "head rest"
   - "arm support"
-  - "claw pose"
-  - "paw pose"
   - "arm behind back"
   - "arm behind head"
   - "flexing"
@@ -346,7 +372,6 @@ poseH1:
   - "open hand"
   - "spread fingers"
   - "clenched hand"
-  - "beckoning"
   - "fellatio gesture"
   - "w"
 poseH2:
@@ -431,7 +456,6 @@ room:
   - "workshop"
   - "garage"
 building:
-  - "hangar"
   - "apartment"
   - "aquarium"
   - "arcade"
@@ -565,6 +589,7 @@ shirtStyle:
   - "striped shirt"
   - "vertical-striped shirt"
   - "two-tone shirt"
+  - "pinstripe shirt"
 topwearOther:
   - "camisole, camisole"
   - "tank top, tank top"
@@ -582,32 +607,32 @@ topwearOther:
   - "sweater, v-neck"
   - "sweater, cable knit"
 outwear:
-  - "cardigan, cardigan"
-  - "cardigan, hooded cardigan"
-  - "coat, coat"
-  - "coat, duffel coat"
-  - "coat, fur coat"
-  - "coat, fur-trimmed coat"
-  - "coat, long coat"
-  - "coat, overcoat"
-  - "coat, trench coat"
-  - "coat, winter coat"
-  - "coat, tailcoat"
+  - "cardigan, cardigan{, open cardigan|}"
+  - "cardigan, hooded cardigan{, open cardigan|}"
+  - "coat, coat{, open coat|}"
+  - "coat, duffel coat{, open coat|}"
+  - "coat, fur coat{, open coat|}"
+  - "coat, fur-trimmed coat{, open coat|}"
+  - "coat, long coat{, open coat|}"
+  - "coat, overcoat{, open coat|}"
+  - "coat, trench coat{, open coat|}"
+  - "coat, winter coat{, open coat|}"
+  - "coat, tailcoat{, open coat|}"
   - "raincoat, raincoat"
-  - "hoodie, hoodie"
-  - "hoodie, cropped hoodie"
-  - "jacket, jacket"
-  - "jacket, blazer"
-  - "jacket, bomber jacket"
-  - "jacket, cropped jacket"
-  - "jacket, hooded jacket"
-  - "jacket, leather jacket"
-  - "jacket, letterman jacket"
-  - "jacket, track jacket"
-  - "jacket, suit jacket"
-  - "vest, vest"
+  - "hoodie, hoodie{, open hoodie|}"
+  - "hoodie, cropped hoodie{, open hoodie|}"
+  - "jacket, jacket{, open jacket|}"
+  - "jacket, blazer{, open jacket|}"
+  - "jacket, bomber jacket{, open jacket|}"
+  - "jacket, cropped jacket{, open jacket|}"
+  - "jacket, hooded jacket{, open jacket|}"
+  - "jacket, leather jacket{, open jacket|}"
+  - "jacket, letterman jacket{, open jacket|}"
+  - "jacket, track jacket{, open jacket|}"
+  - "jacket, suit jacket{, open jacket|}"
+  - "vest, vest{, open vest|}"
   - "sweater vest, sweater vest"
-  - "vest, waistcoat"
+  - "vest, waistcoat{, open vest|}"
 extraWearBody:
   - "__color__ tabard"
 pants:
@@ -666,6 +691,49 @@ skirtType:
 legwear:
   - "{single kneehigh|kneehighs}, __color__ legwear"
   - "leggings, __color__ legwear"
-  - "over-kneehighs, __color__ legwear"
   - "{single thighhigh|thighhighs}, __color__ thighhighs"
   - "{single leg pantyhose|pantyhose}, {thighband pantyhose, |fishnet pantyhose, |}__color__ pantyhose"
+dressType:
+  - "dress, dress"
+  - "dress, armored dress"
+  - "dress, backless dress"
+  - "dress, collared dress"
+  - "dress, frilled dress"
+  - "dress, fur-trimmed dress"
+  - "dress, halter dress"
+  - "dress, halter dress, criss-cross halter"
+  - "dress, impossible dress"
+  - "dress, lace-trimmed dress"
+  - "dress, layered dress"
+  - "dress, long dress"
+  - "dress, off-shoulder dress"
+  - "dress, pleated dress"
+  - "dress, plunging neckline"
+  - "dress, ribbed dress"
+  - "dress, ribbon-trimmed dress"
+  - "dress, short dress"
+  - "dress, side slit"
+  - "dress, taut dress"
+  - "dress, sleeveless dress"
+  - "dress, strapless dress"
+  - "dress, china dress"
+  - "dress, cocktail dress"
+  - "dress, dirndl"
+  - "dress, evening gown"
+  - "dress, gown"
+  - "dress, pencil dress"
+  - "dress, pinafore dress"
+  - "dress, sailor dress"
+  - "dress, santa dress"
+  - "dress, sundress"
+  - "dress, sweater dress"
+  - "dress, tube dress"
+  - "dress, vietnamese dress"
+  - "dress, wedding dress"
+dressStyle:
+  - "two-tone dress"
+  - "plaid dress"
+  - "polka dot dress"
+  - "print dress"
+  - "striped dress"
+  - "vertical-striped dress"

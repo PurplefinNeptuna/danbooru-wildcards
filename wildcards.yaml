@@ -13,17 +13,24 @@ eye:
 hair: "__hairColor__, __hairLength__, __hairTexture__, __hairStyle__, __hairBang__{, __hairExtraTop__|2::}{, __hairExtraFront__|}{, __hairExtraSide__|3::}{, __hairExtraBottom__|3::}"
 clothing:
   "{\
-  2::__topwear__, __bottomwear__\
-  |__dress__\
+  2::__topwear__, __bottomwear__{, __color__ __outwear__|2::}\
+  |__dress__{, __color__ __outwear__|2::}\
+  |__kimono__{, __color__ __kimonoOut__|2::}\
   }"
 #topwear 40
-#bottomwear 40
+#bottomwear 36
 #dress 36
+#kimono 25
 topwear: "__color__ {3::__shirt__|2::__topwearOther__}"
 bottomwear: "__color__ {__pants__|__shorts__{|, __legwear__}|__skirt__}"
-shirt: "__shirtType__, __shirtStyle__"
+shirt: "__shirtType__{|2::, __shirtStyle__}"
 skirt: "{3::__skirtType__, __skirtLength__|__skirtShort__{|, __legwear__}}"
-dress: "__dressType__, __dressStyle__{|, __legwear__}"
+dress: "__color__ __dressType__{|2::, __dressStyle__}{|, __legwear__}"
+kimono:
+  "{\
+  6::__color__ __kimonoTop__{|2::, __kimonoStyle__}{2::|, __kimonoStyle2__}, __color__ __kimonoBot__\
+  |__color__ __kimonoFull__{|2::, __kimonoStyle__}{2::|, __kimonoStyle2__}\
+  }"
 poseH1R: "{2::__poseH1__,|}"
 poseTR: "{2::__poseT__,|}"
 poseArm1: "{__poseAH1__|__poseH1R__ __poseA1__}"
@@ -357,7 +364,6 @@ poseA2:
 poseH1:
   - "outstretched hand"
   - "v"
-  - "fox shadow puppet"
   - "index finger raised"
   - "middle finger"
   - "pinky out"
@@ -372,7 +378,6 @@ poseH1:
   - "open hand"
   - "spread fingers"
   - "clenched hand"
-  - "fellatio gesture"
   - "w"
 poseH2:
   - "clenched hands"
@@ -567,10 +572,7 @@ shirtType:
   - "shirt, collared shirt"
   - "shirt, dress shirt"
   - "shirt, gym shirt"
-  - "shirt, rash guard, crop top, raglan sleeves"
   - "shirt, t-shirt"
-  - "shirt, t-shirt, raglan sleeves"
-  - "shirt, t-shirt, crop top, raglan sleeves"
   - "shirt, v-neck"
   - "shirt, impossible shirt"
   - "shirt, loose shirt"
@@ -581,15 +583,18 @@ shirtType:
   - "shirt, taut shirt"
   - "shirt, tied shirt"
   - "shirt, tight shirt"
+  - "shirt, tangzhuang"
 shirtStyle:
-  - "checkered shirt"
-  - "plaid shirt"
-  - "polka dot shirt"
-  - "print shirt"
-  - "striped shirt"
-  - "vertical-striped shirt"
-  - "two-tone shirt"
-  - "pinstripe shirt"
+  "{\
+  checkered shirt|\
+  plaid shirt|\
+  2::polka dot shirt|\
+  2::print shirt|\
+  striped shirt|\
+  vertical-striped shirt|\
+  2::two-tone shirt|\
+  pinstripe shirt\
+  }"
 topwearOther:
   - "camisole, camisole"
   - "tank top, tank top"
@@ -673,15 +678,12 @@ skirtLength:
 skirtShort:
   - "skirt, bikini skirt"
   - "skirt, denim skirt"
-  - "skirt, hakama short skirt"
   - "skirt, showgirl skirt"
 skirtType:
   - "skirt, high-waist skirt"
   - "skirt, bubble skirt"
   - "skirt, checkered skirt"
   - "skirt, frilled skirt"
-  - "skirt, hakama skirt"
-  - "skirt, kimono skirt"
   - "skirt, layered skirt"
   - "skirt, overskirt"
   - "skirt, plaid skirt"
@@ -731,9 +733,40 @@ dressType:
   - "dress, vietnamese dress"
   - "dress, wedding dress"
 dressStyle:
-  - "two-tone dress"
-  - "plaid dress"
-  - "polka dot dress"
-  - "print dress"
-  - "striped dress"
-  - "vertical-striped dress"
+  "{\
+  2::two-tone dress\
+  |plaid dress\
+  |2::polka dot dress\
+  |2::print dress\
+  |striped dress\
+  |vertical-striped dress\
+  }"
+kimonoTop:
+  - "kimono, kimono"
+  - "kimono, short kimono"
+  - "kimono, (furisode)"
+  - "kimono, (uchikake)"
+  - "kimono, (yukata)"
+  - "kimono, layered kimono"
+kimonoStyle:
+  - "checkered kimono"
+  - "fur-trimmed kimono"
+  - "frilled kimono"
+  - "print kimono"
+  - "striped kimono"
+kimonoStyle2:
+  - "sleeveless kimono"
+  - "hadanugi dousa"
+kimonoFull:
+  - "kimono, (bath yukata)"
+kimonoBot:
+  - "hakama, hakama"
+  - "skirt, hakama skirt"
+  - "skirt, hakama short skirt{|, __legwear__}"
+  - "skirt, skirt{|, __legwear__}"
+kimonoOut:
+  - "jacket, (haori){, open jacket|}"
+  - "jacket, (happi){, open jacket|}"
+  - "jacket, (hanten \\(clothes\\)){, open jacket|}"
+  - "apron, (kappougi)"
+  - "sleeves, (kariginu)"

@@ -16,11 +16,13 @@ clothing:
   2::__topwear__, __bottomwear__{, __color__ __outwear__|2::}\
   |__dress__{, __color__ __outwear__|2::}\
   |__kimono__{, __color__ __kimonoOut__|2::}\
+  |__onesie__{, __color__ __outwear__|2::}\
   }"
-#topwear 40
-#bottomwear 36
-#dress 36
+#topwear 44
+#bottomwear 44
+#dress 38
 #kimono 25
+#bodysuit 28
 topwear: "__color__ {3::__shirt__|2::__topwearOther__}"
 bottomwear: "__color__ {__pants__|__shorts__{|, __legwear__}|__skirt__}"
 shirt: "__shirtType__{|2::, __shirtStyle__}"
@@ -31,6 +33,7 @@ kimono:
   6::__color__ __kimonoTop__{|2::, __kimonoStyle__}{2::|, __kimonoStyle2__}, __color__ __kimonoBot__\
   |__color__ __kimonoFull__{|2::, __kimonoStyle__}{2::|, __kimonoStyle2__}\
   }"
+onesie: "__color__ __bodysuit__"
 poseH1R: "{2::__poseH1__,|}"
 poseTR: "{2::__poseT__,|}"
 poseArm1: "{__poseAH1__|__poseH1R__ __poseA1__}"
@@ -190,35 +193,37 @@ colorBase:
   - "black"
   - "blue"
   - "light blue"
-  - "dark blue"
   - "brown"
-  - "light brown"
   - "green"
-  - "light green"
-  - "dark green"
   - "grey"
   - "orange"
   - "pink"
   - "purple"
-  - "light purple"
   - "red"
-  - "dark red"
 color:
   "{\
   white\
   |yellow\
-  |17::__colorBase__\
+  |11::__colorBase__\
   }"
 colorHair:
   "{\
   white\
+  |dark blue\
+  |light brown\
+  |light green\
+  |dark green\
+  |dark red\
+  |light purple\
   |blonde\
-  |17::__colorBase__\
+  |11::__colorBase__\
   }"
 colorEye:
   "{\
   yellow\
-  |17::__colorBase__\
+  |light brown\
+  |light purple\
+  |11::__colorBase__\
   }"
 multicolorHair:
   - "multicolored hair"
@@ -569,18 +574,25 @@ shirtType:
   - "shirt, frilled shirt"
   - "shirt, sleeveless shirt"
   - "shirt, crop top"
+  - "shirt, cropped shirt"
   - "shirt, collared shirt"
   - "shirt, dress shirt"
   - "shirt, gym shirt"
+  - "shirt, hawaiian shirt"
   - "shirt, t-shirt"
   - "shirt, v-neck"
   - "shirt, impossible shirt"
   - "shirt, loose shirt"
   - "shirt, oversized shirt"
+  - "shirt, off-shoulder shirt"
+  - "shirt, polo shirt"
   - "shirt, ribbed shirt"
   - "shirt, sailor shirt"
+  - "shirt, sideless shirt"
   - "shirt, sleeveless shirt"
+  - "shirt, strapless shirt"
   - "shirt, taut shirt"
+  - "shirt, tented shirt"
   - "shirt, tied shirt"
   - "shirt, tight shirt"
   - "shirt, tangzhuang"
@@ -614,28 +626,46 @@ topwearOther:
 outwear:
   - "cardigan, cardigan{, open cardigan|}"
   - "cardigan, hooded cardigan{, open cardigan|}"
+  - "cardigan, cardigan vest{, open cardigan|}"
   - "coat, coat{, open coat|}"
+  - "coat, collared coat{, open coat|}"
   - "coat, duffel coat{, open coat|}"
   - "coat, fur coat{, open coat|}"
   - "coat, fur-trimmed coat{, open coat|}"
+  - "coat, hooded coat{, open coat|}"
   - "coat, long coat{, open coat|}"
   - "coat, overcoat{, open coat|}"
+  - "coat, sleeveless coat{, open coat|}"
   - "coat, trench coat{, open coat|}"
   - "coat, winter coat{, open coat|}"
   - "coat, tailcoat{, open coat|}"
+  - "coat, labcoat{, open coat|}"
   - "raincoat, raincoat"
   - "hoodie, hoodie{, open hoodie|}"
+  - "hoodie, sleeveless hoodie{, open hoodie|}"
+  - "hoodie, striped hoodie{, open hoodie|}"
   - "hoodie, cropped hoodie{, open hoodie|}"
   - "jacket, jacket{, open jacket|}"
   - "jacket, blazer{, open jacket|}"
   - "jacket, bomber jacket{, open jacket|}"
+  - "jacket, collared jacket{, open jacket|}"
   - "jacket, cropped jacket{, open jacket|}"
+  - "jacket, fur-trimmed jacket{, open jacket|}"
   - "jacket, hooded jacket{, open jacket|}"
+  - "jacket, hooded track jacket{, open jacket|}"
   - "jacket, leather jacket{, open jacket|}"
   - "jacket, letterman jacket{, open jacket|}"
-  - "jacket, track jacket{, open jacket|}"
+  - "jacket, military jacket{, open jacket|}"
+  - "jacket, off-shoulder jacket{, open jacket|}"
+  - "jacket, sleeveless jacket{, open jacket|}"
+  - "jacket, straitjacket{, open jacket|}"
   - "jacket, suit jacket{, open jacket|}"
+  - "jacket, track jacket{, open jacket|}"
   - "vest, vest{, open vest|}"
+  - "vest, bulletproof vest"
+  - "vest, load bearing vest"
+  - "vest, cropped vest{, open vest|}"
+  - "vest, collared vest{, open vest|}"
   - "sweater vest, sweater vest"
   - "vest, waistcoat{, open vest|}"
 extraWearBody:
@@ -648,16 +678,19 @@ pants:
   - "pants, baggy pants"
   - "pants, capri pants"
   - "pants, harem pants"
+  - "pants, high-waist pants"
   - "pants, jeans"
   - "pants, leather pants"
   - "pants, pant suit"
+  - "pants, puffy pants"
   - "pants, lowleg pants"
   - "pants, pants rolled up"
+  - "pants, sweatpants"
   - "pants, tight pants"
+  - "pants, track pants"
   - "pants, yoga pants"
-  - "pants, hakama pants"
 shorts:
-  - "pants, single pantsleg"
+  - "shorts, single pantsleg"
   - "bloomers, bloomers"
   - "buruma, buruma"
   - "shorts, shorts"
@@ -692,6 +725,7 @@ skirtType:
   - "skirt, suspender skirt"
 legwear:
   - "{single kneehigh|kneehighs}, __color__ legwear"
+  - "over-kneehighs, __color__ legwear"
   - "leggings, __color__ legwear"
   - "{single thighhigh|thighhighs}, __color__ thighhighs"
   - "{single leg pantyhose|pantyhose}, {thighband pantyhose, |fishnet pantyhose, |}__color__ pantyhose"
@@ -716,6 +750,8 @@ dressType:
   - "dress, short dress"
   - "dress, side slit"
   - "dress, taut dress"
+  - "dress, tight dress"
+  - "dress, turtleneck dress"
   - "dress, sleeveless dress"
   - "dress, strapless dress"
   - "dress, china dress"
@@ -765,8 +801,37 @@ kimonoBot:
   - "skirt, hakama short skirt{|, __legwear__}"
   - "skirt, skirt{|, __legwear__}"
 kimonoOut:
-  - "jacket, (haori){, open jacket|}"
-  - "jacket, (happi){, open jacket|}"
-  - "jacket, (hanten \\(clothes\\)){, open jacket|}"
+  - "jacket, (haori)"
+  - "jacket, (happi)"
+  - "jacket, (hanten \\(clothes\\))"
   - "apron, (kappougi)"
   - "sleeves, (kariginu)"
+bodysuit:
+  - "bodysuit, bodysuit"
+  - "bodysuit, bikesuit"
+  - "bodysuit, hooded bodysuit"
+  - "bodysuit, impossible bodysuit"
+  - "bodysuit, latex bodysuit"
+  - "bodysuit, pilot suit"
+  - "bodysuit, plugsuit"
+  - "bodysuit, ribbed bodysuit"
+  - "bodysuit, taimanin suit"
+  - "bodysuit, test plugsuit"
+  - "bosysuit, zero suit"
+  - "jumpsuit, jumpsuit"
+  - "jumpsuit, short jumpsuit"
+  - "jumpsuit, racing suit"
+  - "leotard, leotard"
+  - "leotard, backless leotard"
+  - "leotard, frilled leotard"
+  - "leotard, highleg leotard"
+  - "leotard, impossible leotard"
+  - "leotard, strapless leotard"
+  - "leotard, playboy bunny"
+  - "leotard, thong leotard"
+  - "leotard, sleeveless turtleneck leotard"
+  - "leotard, turtleneck leotard"
+  - "leotard, ribbed leotard"
+  - "leotard, athletic leotard"
+  - "wetsuit, wetsuit"
+  - "wetsuit, diving suit"

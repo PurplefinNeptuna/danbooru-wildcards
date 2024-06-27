@@ -4,4 +4,8 @@ action: "{-2$$, $$__facial__|__facial__}, __looking__, __pose__"
 og:
   chara: "__hair__, __eye__, __boob/*/*__"
   outfit: "{__headacc__, |}__clothing__"
+  outfitCasual: "{__headacc__, |}__casual__"
+  outfitLewd: "{__headacc__, |}__lewd__"
   full: "__og/chara__, __og/outfit__"
+  fullCasual: "__og/chara__, __og/outfitCasual__"
+  fullLewd: "__og/chara__, __og/outfitLewd__"

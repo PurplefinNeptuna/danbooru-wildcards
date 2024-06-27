@@ -1,3 +1,34 @@
+#topwear 44
+#bottomwear 44
+#outwear 44
+#dress 38
+#kimono 25
+#bodysuit 28
+#bikinitop 20
+#bikinibot 6
+#swimsuit 12
+#lingerie 8
+#bra 9
+#panties 12
+clothing:
+  "{\
+  7::__casual__|\
+  __lewd__\
+  }"
+casual:
+  "{\
+  2::__topwear__, __bottomwear__{, __color__ __outwear__|2::}\
+  |__dress__{, __color__ __outwear__|2::}\
+  |__kimono__{, __color__ __kimonoOut__|2::}\
+  |__onesie__{, __color__ __outwear__|2::}\
+  |2::__swimsuit__{, __color__ __outwear__|4::}\
+  }"
+lewd:
+  "{\
+  __underwear__{2::|, __legwear__}|\
+  __bra__, __panty__, __color__ __outwearOpen__{2::|, __legwear__}|\
+  __topwear__, __panty__{, __color__ __outwear__|4::}{2::|, __legwear__}\
+  }"
 indoor: "indoors, {5::__room__|8::__building__}"
 outdoor: "outdoors, {8::__building__|7::__outside__|5::nature, __nature__}"
 oneEye:
@@ -11,28 +42,20 @@ eye:
   |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
   }"
 hair: "__hairColor__, __hairLength__, __hairTexture__, __hairStyle__, __hairBang__{, __hairExtraTop__|2::}{, __hairExtraFront__|}{, __hairExtraSide__|3::}{, __hairExtraBottom__|3::}"
-clothing:
+underwear:
   "{\
-  2::__topwear__, __bottomwear__{, __color__ __outwear__|2::}\
-  |__dress__{, __color__ __outwear__|2::}\
-  |__kimono__{, __color__ __kimonoOut__|2::}\
-  |__onesie__{, __color__ __outwear__|2::}\
-  |2::__swimsuit__{, __color__ __outwear__|4::}\
+  __lingerie__, __panty__\
+  |__bra__, __panty__\
   }"
-#topwear 44
-#bottomwear 44
-#dress 38
-#kimono 25
-#bodysuit 28
-#bikinitop 20
-#bikinibot 6
-#swimsuit 12
 swimsuit:
   "{\
   40::__bikini__|\
   25::__1PSwimsuit__|\
   __color__ __swimsuitOther__{2::|, __legwear__}\
   }"
+lingerie: "__color__ __lingerieTop__"
+bra: "__color__ __braType__{, __braStyle__|}"
+panty: "__color__ __pantyType__{, __pantyStyle__|}"
 bikini: "__color__ __bikiniTop__{|, __bikiniBot__}{|, __bikiniStyle__}{2::|, __legwear__}"
 1PSwimsuit: "__color__ __1PSwimsuitType__{|, __1PSwimsuitStyle__}{2::|, __legwear__}"
 topwear: "__color__ {3::__shirt__|2::__topwearOther__}"
@@ -61,7 +84,7 @@ pose:
   2::__poseA__, (__poseTBL__)|\
   __poseATBL__\
   }"
-camera: "__shot__{3::, __angle__|}{, __focus__|}"
+camera: "__shot__{3::, __angle__|}"
 shot:
   "{\
   2::cowboy shot\
@@ -74,11 +97,6 @@ angle:
   |from above\
   |dynamic angle\
   |dutch angle\
-  }"
-focus:
-  "{\
-  navel focus\
-  |hip focus\
   }"
 boob:
   flat:
@@ -285,18 +303,14 @@ facial:
   - "sulking"
   - "surprised"
   - "v-shaped eyebrows"
-  - "ahegao"
-  - "fucked silly"
   - "aroused"
   - "naughty face"
   - "seductive smile"
-  - "torogao"
   - "crazy smile"
   - "evil smile"
   - "grin"
   - "evil grin"
   - "light smile"
-  - "doyagao"
   - "smirk"
   - "smug"
   - "troll face"
@@ -306,7 +320,6 @@ facial:
   - "staring"
   - "half-closed eyes"
   - "squinting"
-  - "rolling eyes"
 looking:
   - "looking afar"
   - "looking at viewer"
@@ -503,18 +516,18 @@ building:
   - "bakery"
   - "convenience store"
   - "skyscraper"
-  - "stadium"
   - "temple"
   - "movie theater"
   - "tower"
   - "clock tower"
   - "train station"
-  - "windmill"
   - "hakurei shrine"
   - "scarlet devil mansion"
   - "mansion"
   - "voile"
 outside:
+  - "stadium"
+  - "windmill"
   - "rooftop"
   - "space"
   - "park"
@@ -579,8 +592,8 @@ headacc:
   - "headband, __color__ headband"
 shirtType:
   - "shirt, shirt"
-  - "shirt, criss-cross halter, halterneck"
-  - "shirt, halterneck"
+  - "shirt, shirt, criss-cross halter, halterneck"
+  - "shirt, shirt, halterneck"
   - "shirt, blouse"
   - "shirt, frilled shirt"
   - "shirt, sleeveless shirt"
@@ -606,7 +619,8 @@ shirtType:
   - "shirt, tented shirt"
   - "shirt, tied shirt"
   - "shirt, tight shirt"
-  - "shirt, tangzhuang"
+  - "shirt, chinese clothes, tangzhuang"
+  - "shirt, pajamas"
 shirtStyle:
   "{\
   checkered shirt|\
@@ -635,50 +649,70 @@ topwearOther:
   - "sweater, v-neck"
   - "sweater, cable knit"
 outwear:
-  - "cardigan, cardigan{, open cardigan|}"
-  - "cardigan, hooded cardigan{, open cardigan|}"
-  - "cardigan, cardigan vest{, open cardigan|}"
-  - "coat, coat{, open coat|}"
-  - "coat, collared coat{, open coat|}"
-  - "coat, duffel coat{, open coat|}"
-  - "coat, fur coat{, open coat|}"
-  - "coat, fur-trimmed coat{, open coat|}"
-  - "coat, hooded coat{, open coat|}"
-  - "coat, long coat{, open coat|}"
-  - "coat, overcoat{, open coat|}"
-  - "coat, sleeveless coat{, open coat|}"
-  - "coat, trench coat{, open coat|}"
-  - "coat, winter coat{, open coat|}"
-  - "coat, tailcoat{, open coat|}"
-  - "coat, labcoat{, open coat|}"
+  "{\
+  __cardigan__{|, open cardigan}|\
+  5::__coat__{|, open coat}|\
+  __hoodie__{|, open hoodie}|\
+  5::__jacket__{|, open jacket}|\
+  2::__vest__{|, open vest}\
+  }"
+outwearOpen:
+  "{\
+  __cardigan__, open cardigan|\
+  5::__coat__, open coat|\
+  __hoodie__, open hoodie|\
+  5::__jacket__, open jacket|\
+  2::__vest__, open vest\
+  }"
+cardigan:
+  - "cardigan, cardigan"
+  - "cardigan, hooded cardigan"
+  - "cardigan, cardigan vest"
+coat:
+  - "coat, coat"
+  - "coat, collared coat"
+  - "coat, duffel coat"
+  - "coat, fur coat"
+  - "coat, fur-trimmed coat"
+  - "coat, hooded coat"
+  - "coat, long coat"
+  - "coat, overcoat"
+  - "coat, sleeveless coat"
+  - "coat, trench coat"
+  - "coat, winter coat"
+  - "coat, tailcoat"
+  - "coat, labcoat"
   - "raincoat, raincoat"
-  - "hoodie, hoodie{, open hoodie|}"
-  - "hoodie, sleeveless hoodie{, open hoodie|}"
-  - "hoodie, striped hoodie{, open hoodie|}"
-  - "hoodie, cropped hoodie{, open hoodie|}"
-  - "jacket, jacket{, open jacket|}"
-  - "jacket, blazer{, open jacket|}"
-  - "jacket, bomber jacket{, open jacket|}"
-  - "jacket, collared jacket{, open jacket|}"
-  - "jacket, cropped jacket{, open jacket|}"
-  - "jacket, fur-trimmed jacket{, open jacket|}"
-  - "jacket, hooded jacket{, open jacket|}"
-  - "jacket, hooded track jacket{, open jacket|}"
-  - "jacket, leather jacket{, open jacket|}"
-  - "jacket, letterman jacket{, open jacket|}"
-  - "jacket, military jacket{, open jacket|}"
-  - "jacket, off-shoulder jacket{, open jacket|}"
-  - "jacket, sleeveless jacket{, open jacket|}"
-  - "jacket, straitjacket{, open jacket|}"
-  - "jacket, suit jacket{, open jacket|}"
-  - "jacket, track jacket{, open jacket|}"
-  - "vest, vest{, open vest|}"
+hoodie:
+  - "hoodie, hoodie"
+  - "hoodie, sleeveless hoodie"
+  - "hoodie, striped hoodie"
+  - "hoodie, cropped hoodie"
+jacket:
+  - "jacket, jacket"
+  - "jacket, blazer"
+  - "jacket, bomber jacket"
+  - "jacket, collared jacket"
+  - "jacket, cropped jacket"
+  - "jacket, fur-trimmed jacket"
+  - "jacket, hooded jacket"
+  - "jacket, hooded track jacket"
+  - "jacket, leather jacket"
+  - "jacket, letterman jacket"
+  - "jacket, military jacket"
+  - "jacket, off-shoulder jacket"
+  - "jacket, sleeveless jacket"
+  - "jacket, straitjacket"
+  - "jacket, suit jacket"
+  - "jacket, track jacket"
+vest:
+  - "vest, vest"
+  - "vest, cropped vest"
+  - "vest, collared vest"
+  - "vest, waistcoat"
   - "vest, bulletproof vest"
   - "vest, load bearing vest"
-  - "vest, cropped vest{, open vest|}"
-  - "vest, collared vest{, open vest|}"
   - "sweater vest, sweater vest"
-  - "vest, waistcoat{, open vest|}"
 extraWearBody:
   - "__color__ tabard"
 pants:
@@ -865,8 +899,8 @@ bikiniTop:
   - "bikini, sports bikini"
   - "bikini, off-shoulder bikini"
   - "bikini, shell bikini"
-  - "bikini, halterneck"
-  - "bikini, halterneck, criss-cross halter"
+  - "bikini, bikini, halterneck"
+  - "bikini, bikini, halterneck, criss-cross halter"
 bikiniBot:
   - "lowleg bikini"
   - "highleg bikini"
@@ -897,3 +931,43 @@ bikiniStyle:
   - "polka dot swimsuit"
 swimsuitOther:
   - "slingshot swimsuit, slingshot swimsuit"
+lingerieTop:
+  - "babydoll, babydoll"
+  - "camisole, camisole"
+  - "chemise, chemise"
+  - "nightgown, nightgown"
+  - "sports bra, sports bra"
+  - "sarashi, sarashi"
+  - "sarashi, chest sarashi"
+  - "sarashi, budget sarashi"
+braType:
+  - "bra, bra"
+  - "bra, bow bra"
+  - "bra, lace-trimmed bra"
+  - "bra, frilled bra"
+  - "bra, strapless bra"
+  - "bra, lace bra"
+  - "bra, belt bra"
+  - "bra, training bra"
+  - "bra, string bra"
+braStyle:
+  - "print bra"
+  - "striped bra"
+pantyType:
+  - "panties, panties"
+  - "panties, side-tie panties"
+  - "panties, bow panties"
+  - "panties, thong"
+  - "panties, highleg panties"
+  - "panties, string panties"
+  - "panties, lace-trimmed panties"
+  - "panties, frilled panties"
+  - "panties, lowleg panties"
+  - "panties, lace panties"
+  - "panties, micro panties"
+  - "panties, multi-strapped panties"
+pantyStyle:
+  - "plaid panties"
+  - "polka dot panties"
+  - "print panties"
+  - "striped panties"

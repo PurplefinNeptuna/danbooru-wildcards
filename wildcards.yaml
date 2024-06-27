@@ -26,7 +26,7 @@ casual:
 lewd:
   "{\
   __underwear__{2::|, __legwear__}|\
-  __bra__, __panty__, __color__ __outwearOpen__{2::|, __legwear__}|\
+  __bra__, __bottomwear__, __color__ __outwearOpen__{2::|, __legwear__}|\
   __topwear__, __panty__{, __color__ __outwear__|4::}{2::|, __legwear__}\
   }"
 indoor: "indoors, {5::__room__|8::__building__}"

@@ -17,21 +17,33 @@ clothing:
   |__dress__{, __color__ __outwear__|2::}\
   |__kimono__{, __color__ __kimonoOut__|2::}\
   |__onesie__{, __color__ __outwear__|2::}\
+  |2::__swimsuit__{, __color__ __outwear__|4::}\
   }"
 #topwear 44
 #bottomwear 44
 #dress 38
 #kimono 25
 #bodysuit 28
+#bikinitop 20
+#bikinibot 6
+#swimsuit 12
+swimsuit:
+  "{\
+  40::__bikini__|\
+  25::__1PSwimsuit__|\
+  __color__ __swimsuitOther__{2::|, __legwear__}\
+  }"
+bikini: "__color__ __bikiniTop__{|, __bikiniBot__}{|, __bikiniStyle__}{2::|, __legwear__}"
+1PSwimsuit: "__color__ __1PSwimsuitType__{|, __1PSwimsuitStyle__}{2::|, __legwear__}"
 topwear: "__color__ {3::__shirt__|2::__topwearOther__}"
 bottomwear: "__color__ {__pants__|__shorts__{|, __legwear__}|__skirt__}"
-shirt: "__shirtType__{|2::, __shirtStyle__}"
+shirt: "__shirtType__{|, __shirtStyle__}"
 skirt: "{3::__skirtType__, __skirtLength__|__skirtShort__{|, __legwear__}}"
-dress: "__color__ __dressType__{|2::, __dressStyle__}{|, __legwear__}"
+dress: "__color__ __dressType__{|, __dressStyle__}{|, __legwear__}"
 kimono:
   "{\
-  6::__color__ __kimonoTop__{|2::, __kimonoStyle__}{2::|, __kimonoStyle2__}, __color__ __kimonoBot__\
-  |__color__ __kimonoFull__{|2::, __kimonoStyle__}{2::|, __kimonoStyle2__}\
+  6::__color__ __kimonoTop__{|, __kimonoStyle__}{2::|, __kimonoStyle2__}, __color__ __kimonoBot__\
+  |__color__ __kimonoFull__{|, __kimonoStyle__}{2::|, __kimonoStyle2__}\
   }"
 onesie: "__color__ __bodysuit__"
 poseH1R: "{2::__poseH1__,|}"
@@ -332,6 +344,7 @@ poseAH1:
   - "breast hold"
 poseAH2:
   - "rabbit pose"
+  - "heart hands"
   - "arms behind back"
   - "arms behind head"
   - "reaching"
@@ -379,7 +392,6 @@ poseH1:
   - "pointing up"
   - "thumbs up"
   - "finger gun"
-  - "ok sign"
   - "open hand"
   - "spread fingers"
   - "clenched hand"
@@ -387,7 +399,6 @@ poseH1:
 poseH2:
   - "clenched hands"
   - "double v"
-  - "heart hands"
   - "double fox shadow puppet"
   - "open hands"
   - "double w"
@@ -835,3 +846,54 @@ bodysuit:
   - "leotard, athletic leotard"
   - "wetsuit, wetsuit"
   - "wetsuit, diving suit"
+bikiniTop:
+  - "bikini, bikini"
+  - "bikini, string bikini"
+  - "bikini, micro bikini"
+  - "bikini, frilled bikini"
+  - "bikini, front-tie bikini top"
+  - "bikini, o-ring top"
+  - "bikini, o-ring bikini"
+  - "bikini, multi-strapped bikini"
+  - "bikini, strapless bikini"
+  - "bikini, maid bikini"
+  - "bikini, layered bikini"
+  - "bikini, eyepatch bikini"
+  - "bikini, sailor bikini"
+  - "bikini, bow bikini"
+  - "bikini, santa bikini"
+  - "bikini, sports bikini"
+  - "bikini, off-shoulder bikini"
+  - "bikini, shell bikini"
+  - "bikini, halterneck"
+  - "bikini, halterneck, criss-cross halter"
+bikiniBot:
+  - "lowleg bikini"
+  - "highleg bikini"
+  - "side-tie bikini bottom"
+  - "multi-strapped bikini bottom"
+  - "bikini skirt"
+  - "thong bikini"
+bikiniStyle:
+  - "plaid bikini"
+  - "two-tone bikini"
+  - "polka dot bikini"
+  - "print bikini"
+  - "striped bikini"
+1PSwimsuitType:
+  - "one-piece swimsuit, one-piece swimsuit"
+  - "one-piece swimsuit, school swimsuit"
+  - "one-piece swimsuit, competition swimsuit"
+  - "one-piece swimsuit, highleg swimsuit"
+  - "one-piece swimsuit, casual one-piece swimsuit"
+  - "one-piece swimsuit, competition school swimsuit"
+  - "one-piece swimsuit, old school swimsuit"
+  - "one-piece swimsuit, frilled swimsuit"
+  - "one-piece swimsuit, new school swimsuit"
+  - "one-piece swimsuit, impossible swimsuit"
+  - "one-piece swimsuit, strapless one-piece swimsuit"
+1PSwimsuitStyle:
+  - "two-tone swimsuit"
+  - "polka dot swimsuit"
+swimsuitOther:
+  - "slingshot swimsuit, slingshot swimsuit"

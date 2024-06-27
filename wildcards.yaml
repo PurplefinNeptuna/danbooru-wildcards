@@ -627,7 +627,7 @@ shirtStyle:
   checkered shirt|\
   plaid shirt|\
   2::polka dot shirt|\
-  2::print shirt|\
+  4::print shirt, __print__|\
   striped shirt|\
   vertical-striped shirt|\
   2::two-tone shirt|\
@@ -819,7 +819,7 @@ dressStyle:
   2::two-tone dress\
   |plaid dress\
   |2::polka dot dress\
-  |2::print dress\
+  |4::print dress, __print__\
   |striped dress\
   |vertical-striped dress\
   }"
@@ -831,11 +831,13 @@ kimonoTop:
   - "kimono, (yukata)"
   - "kimono, layered kimono"
 kimonoStyle:
-  - "checkered kimono"
-  - "fur-trimmed kimono"
-  - "frilled kimono"
-  - "print kimono"
-  - "striped kimono"
+  "{\
+  checkered kimono\
+  |fur-trimmed kimono\
+  |frilled kimono\
+  |2::print kimono, __print__\
+  |striped kimono\
+  }"
 kimonoStyle2:
   - "sleeveless kimono"
   - "hadanugi dousa"
@@ -910,11 +912,13 @@ bikiniBot:
   - "bikini skirt"
   - "thong bikini"
 bikiniStyle:
-  - "plaid bikini"
-  - "two-tone bikini"
-  - "polka dot bikini"
-  - "print bikini"
-  - "striped bikini"
+  "{\
+  plaid bikini\
+  |two-tone bikini\
+  |polka dot bikini\
+  |2::print bikini, __print__\
+  |striped bikini\
+  }"
 1PSwimsuitType:
   - "one-piece swimsuit, one-piece swimsuit"
   - "one-piece swimsuit, school swimsuit"
@@ -951,9 +955,7 @@ braType:
   - "bra, belt bra"
   - "bra, training bra"
   - "bra, string bra"
-braStyle:
-  - "print bra"
-  - "striped bra"
+braStyle: "{print bra, __print__|striped bra}"
 pantyType:
   - "panties, panties"
   - "panties, side-tie panties"
@@ -968,7 +970,47 @@ pantyType:
   - "panties, micro panties"
   - "panties, multi-strapped panties"
 pantyStyle:
-  - "plaid panties"
-  - "polka dot panties"
-  - "print panties"
-  - "striped panties"
+  "{\
+  plaid panties\
+  |polka dot panties\
+  |2::print panties, __print__\
+  |striped panties\
+  }"
+print:
+  - "floral print"
+  - "animal print"
+  - "cow print"
+  - "paw print"
+  - "star print"
+  - "tiger print"
+  - "camouflage"
+  - "argyle"
+  - "heart print"
+  - "flag print"
+  - "serval print"
+  - "leaf print"
+  - "bat print"
+  - "food print"
+  - "rose print"
+  - "leopard print"
+  - "rabbit print"
+  - "spider web print"
+  - "snowflake print"
+  - "dragon print"
+  - "cat print"
+  - "butterfly print"
+  - "starry sky print"
+  - "cherry blossom print"
+  - "constellation print"
+  - "clover print"
+  - "cloud print"
+  - "strawberry print"
+  - "flame print"
+  - "bear print"
+  - "cross print"
+  - "triangle print"
+  - "crescent print"
+  - "fish print"
+  - "frog print"
+  - "sparkle print"
+  - "jaguar print"

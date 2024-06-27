@@ -29,19 +29,7 @@ lewd:
   __bra__, __bottomwear__, __color__ __outwearOpen__{2::|, __legwear__}|\
   __topwear__, __panty__{, __color__ __outwear__|4::}{2::|, __legwear__}\
   }"
-indoor: "indoors, {5::__room__|8::__building__}"
-outdoor: "outdoors, {8::__building__|7::__outside__|5::nature, __nature__}"
-oneEye:
-  "{\
-  3::__colorEye__ eyes\
-  |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, multicolored eyes\
-  }"
-eye:
-  "{\
-  4::__oneEye__{, one eye closed|3::}\
-  |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
-  }"
-hair: "__hairColor__, __hairLength__, __hairTexture__, __hairStyle__, __hairBang__{, __hairExtraTop__|2::}{, __hairExtraFront__|}{, __hairExtraSide__|3::}{, __hairExtraBottom__|3::}"
+onesieMania: "{__onesie__|__1PSwimsuit__|__dress__}"
 underwear:
   "{\
   __lingerie__, __panty__\
@@ -69,6 +57,19 @@ kimono:
   |__color__ __kimonoFull__{|, __kimonoStyle__}{2::|, __kimonoStyle2__}\
   }"
 onesie: "__color__ __bodysuit__"
+indoor: "indoors, {5::__room__|8::__building__}"
+outdoor: "outdoors, {8::__building__|7::__outside__|5::nature, __nature__}"
+oneEye:
+  "{\
+  3::__colorEye__ eyes\
+  |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, multicolored eyes\
+  }"
+eye:
+  "{\
+  4::__oneEye__{, one eye closed|3::}\
+  |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
+  }"
+hair: "__hairColor__, __hairLength__, __hairTexture__, __hairStyle__, __hairBang__{, __hairExtraTop__|2::}{, __hairExtraFront__|}{, __hairExtraSide__|3::}{, __hairExtraBottom__|3::}"
 poseH1R: "{2::__poseH1__,|}"
 poseTR: "{2::__poseT__,|}"
 poseArm1: "{__poseAH1__|__poseH1R__ __poseA1__}"

@@ -15,13 +15,26 @@ clothing:
   7::__casual__|\
   __lewd__\
   }"
+clothingM:
+  "{\
+  7::__casualM__|\
+  __lewdM__\
+  }"
 casual:
   "{\
-  2::__topwear__, __bottomwear__{, __color__ __outwear__|2::}\
+  __topwear__, __bottomwear__{, __color__ __outwear__|2::}\
   |__dress__{, __color__ __outwear__|2::}\
   |__kimono__{, __color__ __kimonoOut__|2::}\
   |__onesie__{, __color__ __outwear__|2::}\
-  |2::__swimsuit__{, __color__ __outwear__|4::}\
+  |__swimsuit__{, __color__ __outwear__|4::}\
+  }"
+casualM:
+  "{\
+  __topwearM__, __bottomwearM__{, __colorMono__ __outwear__|2::}\
+  |__dressM__{, __colorMono__ __outwear__|2::}\
+  |__kimonoM__{, __colorMono__ __kimonoOut__|2::}\
+  |__onesieM__{, __colorMono__ __outwear__|2::}\
+  |__swimsuitM__{, __colorMono__ __outwear__|4::}\
   }"
 lewd:
   "{\
@@ -29,11 +42,33 @@ lewd:
   __bra__, __bottomwear__, __color__ __outwearOpen__{2::|, __legwear__}|\
   __topwear__, __panty__{, __color__ __outwear__|4::}{2::|, __legwear__}\
   }"
+lewdM:
+  "{\
+  __underwearM__{2::|, __legwearM__}|\
+  __braM__, __bottomwearM__, __colorMono__ __outwearOpen__{2::|, __legwearM__}|\
+  __topwearM__, __pantyM__{, __colorMono__ __outwear__|4::}{2::|, __legwearM__}\
+  }"
+lessCover:
+  "{\
+  __underwear__{2::|, __legwear__}|\
+  __bikini__\
+  }"
+lessCoverM:
+  "{\
+  __underwearM__{2::|, __legwearM__}|\
+  __bikiniM__\
+  }"
 onesieMania: "{__onesie__|__1PSwimsuit__|__dress__}"
+onesieManiaM: "{__onesieM__|__1PSwimsuitM__|__dressM__}"
 underwear:
   "{\
   __lingerie__, __panty__\
   |__bra__, __panty__\
+  }"
+underwearM:
+  "{\
+  __lingerieM__, __pantyM__\
+  |__braM__, __pantyM__\
   }"
 swimsuit:
   "{\
@@ -41,22 +76,50 @@ swimsuit:
   25::__1PSwimsuit__|\
   __color__ __swimsuitOther__{2::|, __legwear__}\
   }"
+swimsuitM:
+  "{\
+  40::__bikiniM__|\
+  25::__1PSwimsuitM__|\
+  __colorMono__ __swimsuitOther__{2::|, __legwearM__}\
+  }"
 lingerie: "__color__ __lingerieTop__"
+lingerieM: "__colorMono__ __lingerieTop__"
 bra: "__color__ __braType__{, __braStyle__|}"
+braM: "__colorMono__ __braType__{, __braStyle__|}"
 panty: "__color__ __pantyType__{, __pantyStyle__|}"
+pantyM: "__colorMono__ __pantyType__{, __pantyStyle__|}"
 bikini: "__color__ __bikiniTop__{|, __bikiniBot__}{|, __bikiniStyle__}{2::|, __legwear__}"
+bikiniM: "__colorMono__ __bikiniTop__{|, __bikiniBot__}{|, __bikiniStyle__}{2::|, __legwear__}"
 1PSwimsuit: "__color__ __1PSwimsuitType__{|, __1PSwimsuitStyle__}{2::|, __legwear__}"
+1PSwimsuitM: "__colorMono__ __1PSwimsuitType__{|, __1PSwimsuitStyle__}{2::|, __legwear__}"
 topwear: "__color__ {3::__shirt__|2::__topwearOther__}"
+topwearM: "__colorMono__ {3::__shirt__|2::__topwearOther__}"
 bottomwear: "__color__ {__pants__|__shorts__{|, __legwear__}|__skirt__}"
+bottomwearM: "__colorMono__ {__pants__|__shorts__{|, __legwear__}|__skirt__}"
 shirt: "__shirtType__{|, __shirtStyle__}"
 skirt: "{3::__skirtType__, __skirtLength__|__skirtShort__{|, __legwear__}}"
 dress: "__color__ __dressType__{|, __dressStyle__}{|, __legwear__}"
+dressM: "__colorMono__ __dressType__{|, __dressStyle__}{|, __legwear__}"
 kimono:
   "{\
-  6::__color__ __kimonoTop__{|, __kimonoStyle__}{2::|, __kimonoStyle2__}, __color__ __kimonoBot__\
-  |__color__ __kimonoFull__{|, __kimonoStyle__}{2::|, __kimonoStyle2__}\
+  6::__color__ __kimonoTop__, __kimonoStyle__{2::|, __kimonoStyle2__}, (obi, sash), __color__ __kimonoBot__\
+  |__color__ __kimonoFull__, __kimonoStyle__{2::|, __kimonoStyle2__}\
+  }"
+kimonoM:
+  "{\
+  6::__colorMono__ __kimonoTop__, __kimonoStyle__{2::|, __kimonoStyle2__}, (obi, sash), __colorMono__ __kimonoBot__\
+  |__colorMono__ __kimonoFull__, __kimonoStyle__{2::|, __kimonoStyle2__}\
   }"
 onesie: "__color__ __bodysuit__"
+onesieM: "__colorMono__ __bodysuit__"
+legwear:
+  - "leggings, __color__ legwear"
+  - "{single thighhigh|thighhighs}, __color__ thighhighs"
+  - "{single leg pantyhose|pantyhose}, {thighband pantyhose, |fishnet pantyhose, |}__color__ pantyhose"
+legwearM:
+  - "leggings, __colorMono__ legwear"
+  - "{single thighhigh|thighhighs}, __colorMono__ thighhighs"
+  - "{single leg pantyhose|pantyhose}, {thighband pantyhose, |fishnet pantyhose, |}__colorMono__ pantyhose"
 indoor: "indoors, {5::__room__|8::__building__}"
 outdoor: "outdoors, {8::__building__|7::__outside__|5::nature, __nature__}"
 oneEye:
@@ -64,64 +127,139 @@ oneEye:
   3::__colorEye__ eyes\
   |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, multicolored eyes\
   }"
+oneEyeM:
+  "{\
+  3::__colorMono__ eyes\
+  |__colorMono__ eyes, multicolored eyes\
+  }"
 eye:
   "{\
   4::__oneEye__{, one eye closed|3::}\
   |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
   }"
+eyeM:
+  "{\
+  4::__oneEyeM__{, one eye closed|3::}\
+  |__colorMono__ eyes, heterochromia\
+  }"
 hair: "__hairColor__, __hairLength__, __hairTexture__, __hairStyle__, __hairBang__{, __hairExtraTop__|2::}{, __hairExtraFront__|}{, __hairExtraSide__|3::}{, __hairExtraBottom__|3::}"
+hairM: "__hairColorM__, __hairLength__, __hairTexture__, __hairStyle__, __hairBang__{, __hairExtraTop__|2::}{, __hairExtraFront__|}{, __hairExtraSide__|3::}{, __hairExtraBottom__|3::}"
 poseH1R: "{2::__poseH1__,|}"
 poseTR: "{2::__poseT__,|}"
 poseArm1: "{__poseAH1__|__poseH1R__ __poseA1__}"
 poseA:
-  "{2::__poseAH2__|\
-  20::__poseArm1__ __poseArm1__|\
-  18::__poseH1R__ __poseH1R__ __poseA2__|\
-  5::__poseH2__, __poseA1__, __poseA1__}"
+  "{3::__poseAH2__|\
+  47::__poseArm1__, __poseArm1__|\
+  20::__poseH1R__ __poseH1R__ __poseA2__|\
+  4::__poseH2__, __poseA1__, __poseA1__}"
 pose:
-  "{__poseS__, |2::}{14::__poseA__, __poseTR__ (__poseB__, __poseL__)|\
-  10::__poseA__, __poseTR__ (__poseBL__)|\
-  6::__poseA__, (__poseTB__, __poseL__)|\
-  2::__poseA__, (__poseTBL__)|\
-  __poseATBL__\
+  "{__poseS__, |2::}{14::__poseA__, __poseTR__ (__poseB__, __poseL__:1.2)|\
+  10::__poseA__, __poseTR__ (__poseBL__:1.2)|\
+  6::__poseA__, ((__poseTB__:1.4), __poseL__:1.2)|\
+  2::__poseA__, (__poseTBL__:1.2)|\
+  (__poseATBL__:1.2)\
   }"
-camera: "__shot__{3::, __angle__|}"
+camera: "(__shot__:1.2){2::, __angle__|}"
+closeUp: "(close-up:1.2){2::, __angle__|}"
+expression: "{-2$$, $$__facial__|__facial__}, __looking__"
 shot:
   "{\
   2::cowboy shot\
   |portrait\
+  |close-up\
   }"
 angle:
   "{\
-  2::straight-on\
-  |from side\
-  |from above\
-  |dynamic angle\
-  |dutch angle\
+  3::straight-on\
+  |2::from side\
+  |2::from above\
+  |from below\
+  |2::dynamic angle\
+  |2::dutch angle\
   }"
 boob:
   flat:
     flat: "flat chest"
-    small: "[flat chest:small breasts:0.2]"
-    medium: "[flat chest:medium breasts:0.2]"
-    large: "[flat chest:large breasts:0.2]"
+    small: "[flat chest:small breasts:0.3]"
+    normal: "[flat chest:breasts:0.3]"
+    medium: "[flat chest:medium breasts:0.3]"
+    large: "[flat chest:large breasts:0.3]"
   small:
-    flat: "[small breasts:flat chest:0.2]"
+    flat: "[small breasts:flat chest:0.3]"
     small: "small breasts"
-    medium: "[small:medium:0.2] breasts"
-    large: "[small:large:0.2] breasts"
+    normal: "[small ::0.3]breasts"
+    medium: "[small:medium:0.3] breasts"
+    large: "[small:large:0.3] breasts"
+  normal:
+    flat: "[breasts:flat chest:0.3]"
+    small: "[small :0.3]breasts"
+    normal: "breasts"
+    medium: "[medium :0.3]breasts"
+    large: "[large :0.3]breasts"
   medium:
-    small: "[medium:small:0.2] breasts"
+    small: "[medium:small:0.3] breasts"
+    normal: "[medium ::0.3]breasts"
     medium: "medium breasts"
-    large: "[medium:large:0.2] breasts"
+    large: "[medium:large:0.3] breasts"
   large:
-    medium: "[large:medium:0.2] breasts"
+    normal: "[large ::0.3]breasts"
+    medium: "[large:medium:0.3] breasts"
     large: "large breasts"
+    huge: "[large:huge:0.3] breasts"
+    gigantic: "[large:gigantic:0.3] breasts"
+  huge:
+    large: "[huge:large:0.3] breasts"
+    huge: "huge breasts"
+    gigantic: "[huge:gigantic:0.3] breasts"
+  gigantic:
+    large: "[gigantic:large:0.3] breasts"
+    huge: "[gigantic:huge:0.3] breasts"
+    gigantic: "gigantic breasts"
+
 android: "android, mechanical arms, mechanical legs, robot joints, robot ears, mechanical ears, glowing eyes"
+kemonoPlus: "{__furry__|__kemono__}"
+furryTrait: "furry, __colorFur__ fur, fluffy"
+furry:
+  - "(__furryTrait__, snout, whiskers:1.3), fox girl, fox ears, fox tail{ |, (slit pupils:1.2)}"
+  - "(__furryTrait__, snout, whiskers:1.3), raccoon girl, raccoon ears, raccoon tail"
+  - "(__furryTrait__, snout, whiskers:1.3), cat girl, cat ears, cat tail{ |, (slit pupils:1.2)}"
+  - "(__furryTrait__, snout, whiskers:1.3), wolf girl, wolf ears, wolf tail{ |, (slit pupils:1.2)}"
+  - "(__furryTrait__, snout, whiskers:1.3), dog girl, dog ears, dog tail"
+  - "(__furryTrait__, whiskers:1.3), rabbit girl, rabbit ears, rabbit tail{ |, horizontal pupils}"
+  - "(__furryTrait__, snout, whiskers:1.3), tiger girl, tiger ears, tiger tail{ |, (slit pupils:1.2)}"
+  - "(__furryTrait__, snout:1.3), horse girl, horse ears, horse tail{ |, horizontal pupils}"
+  - "(__furryTrait__, snout:1.3), cow girl, cow horns, cow ears, cow tail{ |, horizontal pupils}"
+  - "(__furryTrait__, snout:1.3), deer girl, deer horns, deer ears, deer tail{ |, horizontal pupils}"
+  - "(__furryTrait__, snout:1.3), bear girl, bear ears, bear tail"
+  - "(__furryTrait__, whiskers:1.3), squirrel girl, squirrel ears, squirrel tail"
+  - "(__furryTrait__, snout, whiskers:1.3), lion girl, lion ears, lion tail{ |, (slit pupils:1.2)}"
+  - "(__furryTrait__, snout, whiskers:1.3), mouse girl, mouse ears, mouse tail"
+kemono:
+  - "fox girl, fox ears, fox tail{ |, (slit pupils:1.2)}"
+  - "raccoon girl, raccoon ears, raccoon tail"
+  - "cat girl, cat ears, cat tail{ |, (slit pupils:1.2)}"
+  - "wolf girl, wolf ears, wolf tail{ |, (slit pupils:1.2)}"
+  - "dog girl, dog ears, dog tail"
+  - "rabbit girl, rabbit ears, rabbit tail{ |, horizontal pupils}"
+  - "tiger girl, tiger ears, tiger tail{ |, (slit pupils:1.2)}"
+  - "horse girl, horse ears, horse tail{ |, horizontal pupils}"
+  - "cow girl, cow horns, cow ears, cow tail{ |, horizontal pupils}"
+  - "dragon girl, dragon horns, dragon wings, dragon tail{ |, (slit pupils:1.2)}"
+  - "deer girl, deer horns, deer ears, deer tail{ |, horizontal pupils}"
+  - "bear girl, bear ears, bear tail"
+  - "squirrel girl, squirrel ears, squirrel tail"
+  - "lion girl, lion ears, lion tail{ |, (slit pupils:1.2)}"
+  - "mouse girl, mouse ears, mouse tail"
+  - "kemonomimi mode, animal ears, animal tail{ |, (slit pupils:1.2)}"
 hairColor:
   "{\
   2::__colorHair__ hair\
   |{2$$ hair, $$__colorHair__|__colorHair__} hair, __multicolorHair__\
+  }"
+hairColorM:
+  "{\
+  2::__colorMono__ hair\
+  |__colorMono__ hair, __multicolorHair__\
   }"
 hairLength:
   "{\
@@ -192,8 +330,6 @@ hairStyle:
   - "single hair bun"
   - "double bun"
   - "single side bun"
-  - "cone hair bun"
-  - "doughnut hair bun"
   - "hair rings"
   - "braided hair rings"
   - "single hair ring"
@@ -216,9 +352,19 @@ hairStyle:
   - "twintails"
   - "low twintails"
   - "short twintails"
-  - "tri tails"
-  - "quad tails"
   - "twin drills"
+colorFur:
+  - "black"
+  - "brown"
+  - "grey"
+  - "white"
+  - "red"
+  - "blue"
+  - "orange"
+  - "green"
+  - "purple"
+  - "yellow"
+  - "pink"
 colorBase:
   - "aqua"
   - "black"
@@ -231,6 +377,13 @@ colorBase:
   - "pink"
   - "purple"
   - "red"
+colorMono:
+  - "white"
+  - "grey"
+  - "light grey"
+  - "dark grey"
+  - "black"
+  - ""
 color:
   "{\
   white\
@@ -345,7 +498,6 @@ poseAH1:
   - "hand on own thigh"
   - "hand on own knee"
   - "hand on own stomach"
-  - "hand on own arm"
   - "hand on own leg"
   - "hand on own shoulder"
   - "hand on own neck"
@@ -397,26 +549,20 @@ poseH1:
   - "v"
   - "index finger raised"
   - "middle finger"
-  - "pinky out"
   - "pointing"
   - "pointing at viewer"
   - "pointing at self"
-  - "double w"
   - "pointing up"
   - "thumbs up"
   - "finger gun"
   - "open hand"
   - "spread fingers"
   - "clenched hand"
-  - "w"
 poseH2:
   - "clenched hands"
   - "double v"
-  - "double fox shadow puppet"
   - "open hands"
-  - "double w"
 poseT:
-  - "stretching"
   - "arched back"
   - "bent over"
   - "leaning back"
@@ -431,6 +577,7 @@ poseTB:
 poseB:
   - "sitting"
   - "standing"
+  - "dynamic pose"
   - "fighting stance"
 poseBL:
   - "seiza, on floor"
@@ -581,6 +728,15 @@ nature:
   - "river"
   - "stream"
   - "waterfall"
+headaccM:
+  - "hair bow, __colorMono__ bow"
+  - "hair ribbon, __colorMono__ ribbon"
+  - "hairband, __colorMono__ hairband"
+  - "hair bobbles"
+  - "hairclip"
+  - "hairpin"
+  - "hair scrunchie, __colorMono__ scrunchie"
+  - "headband, __colorMono__ headband"
 headacc:
   - "hair bow, __color__ bow"
   - "hair ribbon, __color__ ribbon"
@@ -600,11 +756,10 @@ shirtType:
   - "shirt, crop top"
   - "shirt, cropped shirt"
   - "shirt, collared shirt"
-  - "shirt, dress shirt"
   - "shirt, gym shirt"
   - "shirt, hawaiian shirt"
   - "shirt, t-shirt"
-  - "shirt, v-neck"
+  - "shirt, shirt, v-neck"
   - "shirt, impossible shirt"
   - "shirt, loose shirt"
   - "shirt, oversized shirt"
@@ -625,11 +780,11 @@ shirtStyle:
   "{\
   checkered shirt|\
   plaid shirt|\
-  2::polka dot shirt|\
+  polka dot shirt|\
   4::print shirt, __print__|\
   striped shirt|\
   vertical-striped shirt|\
-  2::two-tone shirt|\
+  two-tone shirt|\
   pinstripe shirt\
   }"
 topwearOther:
@@ -646,8 +801,8 @@ topwearOther:
   - "sweater, virgin killer sweater"
   - "sweater, off-shoulder sweater"
   - "sweater, turtleneck sweater"
-  - "sweater, v-neck"
-  - "sweater, cable knit"
+  - "sweater, sweater, v-neck"
+  - "sweater, sweater, cable knit"
 outwear:
   "{\
   __cardigan__{|, open cardigan}|\
@@ -713,8 +868,6 @@ vest:
   - "vest, bulletproof vest"
   - "vest, load bearing vest"
   - "sweater vest, sweater vest"
-extraWearBody:
-  - "__color__ tabard"
 pants:
   - "pants, chaps"
   - "pants, pants"
@@ -768,12 +921,6 @@ skirtType:
   - "skirt, pleated skirt"
   - "skirt, pencil skirt"
   - "skirt, suspender skirt"
-legwear:
-  - "{single kneehigh|kneehighs}, __color__ legwear"
-  - "over-kneehighs, __color__ legwear"
-  - "leggings, __color__ legwear"
-  - "{single thighhigh|thighhighs}, __color__ thighhighs"
-  - "{single leg pantyhose|pantyhose}, {thighband pantyhose, |fishnet pantyhose, |}__color__ pantyhose"
 dressType:
   - "dress, dress"
   - "dress, armored dress"
@@ -781,19 +928,19 @@ dressType:
   - "dress, collared dress"
   - "dress, frilled dress"
   - "dress, fur-trimmed dress"
-  - "dress, halter dress"
-  - "dress, halter dress, criss-cross halter"
+  - "dress, dress, halter dress"
+  - "dress, dress, halter dress, criss-cross halter"
   - "dress, impossible dress"
   - "dress, lace-trimmed dress"
   - "dress, layered dress"
   - "dress, long dress"
   - "dress, off-shoulder dress"
   - "dress, pleated dress"
-  - "dress, plunging neckline"
+  - "dress, plunging neckline, dress"
   - "dress, ribbed dress"
   - "dress, ribbon-trimmed dress"
   - "dress, short dress"
-  - "dress, side slit"
+  - "dress, dress, side slit"
   - "dress, taut dress"
   - "dress, tight dress"
   - "dress, turtleneck dress"
@@ -802,8 +949,8 @@ dressType:
   - "dress, china dress"
   - "dress, cocktail dress"
   - "dress, dirndl"
-  - "dress, evening gown"
-  - "dress, gown"
+  - "dress, evening gown, dress"
+  - "dress, gown, dress"
   - "dress, pencil dress"
   - "dress, pinafore dress"
   - "dress, sailor dress"
@@ -815,9 +962,9 @@ dressType:
   - "dress, wedding dress"
 dressStyle:
   "{\
-  2::two-tone dress\
+  two-tone dress\
   |plaid dress\
-  |2::polka dot dress\
+  |polka dot dress\
   |4::print dress, __print__\
   |striped dress\
   |vertical-striped dress\
@@ -825,9 +972,9 @@ dressStyle:
 kimonoTop:
   - "kimono, kimono"
   - "kimono, short kimono"
-  - "kimono, (furisode)"
-  - "kimono, (uchikake)"
-  - "kimono, (yukata)"
+  - "kimono, furisode"
+  - "kimono, uchikake"
+  - "kimono, yukata"
   - "kimono, layered kimono"
 kimonoStyle:
   "{\
@@ -839,46 +986,43 @@ kimonoStyle:
   }"
 kimonoStyle2:
   - "sleeveless kimono"
-  - "hadanugi dousa"
 kimonoFull:
-  - "kimono, (bath yukata)"
+  - "kimono, bath yukata"
 kimonoBot:
-  - "hakama, hakama"
   - "skirt, hakama skirt"
   - "skirt, hakama short skirt{|, __legwear__}"
-  - "skirt, skirt{|, __legwear__}"
+  - "skirt{|, __legwear__}"
 kimonoOut:
-  - "jacket, (haori)"
-  - "jacket, (happi)"
-  - "jacket, (hanten \\(clothes\\))"
-  - "apron, (kappougi)"
-  - "sleeves, (kariginu)"
+  - "jacket, haori"
+  - "jacket, hanten \\(clothes\\)"
+  - "apron, kappougi"
+  - "sleeves, kariginu"
 bodysuit:
   - "bodysuit, bodysuit"
   - "bodysuit, bikesuit"
-  - "bodysuit, hooded bodysuit"
-  - "bodysuit, impossible bodysuit"
-  - "bodysuit, latex bodysuit"
+  - "bodysuit, hooded bodysuit, bodysuit"
+  - "bodysuit, impossible bodysuit, bodysuit"
+  - "bodysuit, latex bodysuit, bodysuit"
   - "bodysuit, pilot suit"
   - "bodysuit, plugsuit"
-  - "bodysuit, ribbed bodysuit"
+  - "bodysuit, ribbed bodysuit, bodysuit"
   - "bodysuit, taimanin suit"
   - "bodysuit, test plugsuit"
-  - "bosysuit, zero suit"
+  - "bodysuit, zero suit"
   - "jumpsuit, jumpsuit"
   - "jumpsuit, short jumpsuit"
   - "jumpsuit, racing suit"
   - "leotard, leotard"
-  - "leotard, backless leotard"
-  - "leotard, frilled leotard"
-  - "leotard, highleg leotard"
-  - "leotard, impossible leotard"
-  - "leotard, strapless leotard"
+  - "leotard, backless leotard, leotard"
+  - "leotard, frilled leotard, leotard"
+  - "leotard, highleg leotard, leotard"
+  - "leotard, impossible leotard, leotard"
+  - "leotard, strapless leotard, leotard"
   - "leotard, playboy bunny"
   - "leotard, thong leotard"
-  - "leotard, sleeveless turtleneck leotard"
-  - "leotard, turtleneck leotard"
-  - "leotard, ribbed leotard"
+  - "leotard, sleeveless turtleneck leotard, leotard"
+  - "leotard, turtleneck leotard, leotard"
+  - "leotard, ribbed leotard, leotard"
   - "leotard, athletic leotard"
   - "wetsuit, wetsuit"
   - "wetsuit, diving suit"
@@ -886,21 +1030,20 @@ bikiniTop:
   - "bikini, bikini"
   - "bikini, string bikini"
   - "bikini, micro bikini"
-  - "bikini, frilled bikini"
+  - "bikini, frilled bikini, bikini"
   - "bikini, front-tie bikini top"
   - "bikini, o-ring top"
-  - "bikini, o-ring bikini"
+  - "bikini, o-ring bikini, bikini"
   - "bikini, multi-strapped bikini"
   - "bikini, strapless bikini"
-  - "bikini, maid bikini"
-  - "bikini, layered bikini"
+  - "bikini, maid bikini, bikini"
+  - "bikini, layered bikini, bikini"
   - "bikini, eyepatch bikini"
-  - "bikini, sailor bikini"
-  - "bikini, bow bikini"
-  - "bikini, santa bikini"
+  - "bikini, sailor bikini, bikini"
+  - "bikini, bow bikini, bikini"
+  - "bikini, santa bikini, bikini"
   - "bikini, sports bikini"
-  - "bikini, off-shoulder bikini"
-  - "bikini, shell bikini"
+  - "bikini, off-shoulder bikini, bikini"
   - "bikini, bikini, halterneck"
   - "bikini, bikini, halterneck, criss-cross halter"
 bikiniBot:
@@ -920,16 +1063,16 @@ bikiniStyle:
   }"
 1PSwimsuitType:
   - "one-piece swimsuit, one-piece swimsuit"
-  - "one-piece swimsuit, school swimsuit"
-  - "one-piece swimsuit, competition swimsuit"
-  - "one-piece swimsuit, highleg swimsuit"
-  - "one-piece swimsuit, casual one-piece swimsuit"
-  - "one-piece swimsuit, competition school swimsuit"
-  - "one-piece swimsuit, old school swimsuit"
-  - "one-piece swimsuit, frilled swimsuit"
-  - "one-piece swimsuit, new school swimsuit"
-  - "one-piece swimsuit, impossible swimsuit"
-  - "one-piece swimsuit, strapless one-piece swimsuit"
+  - "one-piece swimsuit, school swimsuit, one-piece swimsuit"
+  - "one-piece swimsuit, competition swimsuit, one-piece swimsuit"
+  - "one-piece swimsuit, highleg swimsuit, one-piece swimsuit"
+  - "one-piece swimsuit, casual one-piece swimsuit, one-piece swimsuit"
+  - "one-piece swimsuit, competition school swimsuit, one-piece swimsuit"
+  - "one-piece swimsuit, old school swimsuit, one-piece swimsuit"
+  - "one-piece swimsuit, frilled one-piece swimsuit, one-piece swimsuit"
+  - "one-piece swimsuit, new school swimsuit, one-piece swimsuit"
+  - "one-piece swimsuit, impossible swimsuit, one-piece swimsuit"
+  - "one-piece swimsuit, strapless one-piece swimsuit, one-piece swimsuit"
 1PSwimsuitStyle:
   - "two-tone swimsuit"
   - "polka dot swimsuit"
@@ -941,14 +1084,11 @@ lingerieTop:
   - "chemise, chemise"
   - "nightgown, nightgown"
   - "sports bra, sports bra"
-  - "sarashi, sarashi"
-  - "sarashi, chest sarashi"
-  - "sarashi, budget sarashi"
 braType:
   - "bra, bra"
-  - "bra, bow bra"
-  - "bra, lace-trimmed bra"
-  - "bra, frilled bra"
+  - "bra, bow bra, bra"
+  - "bra, lace-trimmed bra, bra"
+  - "bra, frilled bra, bra"
   - "bra, strapless bra"
   - "bra, lace bra"
   - "bra, belt bra"
@@ -957,14 +1097,14 @@ braType:
 braStyle: "{print bra, __print__|striped bra}"
 pantyType:
   - "panties, panties"
-  - "panties, side-tie panties"
-  - "panties, bow panties"
+  - "panties, side-tie panties, panties"
+  - "panties, bow panties, panties"
   - "panties, thong"
-  - "panties, highleg panties"
+  - "panties, highleg panties, panties"
   - "panties, string panties"
-  - "panties, lace-trimmed panties"
-  - "panties, frilled panties"
-  - "panties, lowleg panties"
+  - "panties, lace-trimmed panties, panties"
+  - "panties, frilled panties, panties"
+  - "panties, lowleg panties, panties"
   - "panties, lace panties"
   - "panties, micro panties"
   - "panties, multi-strapped panties"
@@ -977,39 +1117,22 @@ pantyStyle:
   }"
 print:
   - "floral print"
-  - "animal print"
   - "cow print"
   - "paw print"
   - "star print"
-  - "tiger print"
   - "camouflage"
   - "argyle"
   - "heart print"
-  - "flag print"
-  - "serval print"
   - "leaf print"
-  - "bat print"
-  - "food print"
   - "rose print"
-  - "leopard print"
-  - "rabbit print"
-  - "spider web print"
   - "snowflake print"
   - "dragon print"
-  - "cat print"
   - "butterfly print"
-  - "starry sky print"
   - "cherry blossom print"
-  - "constellation print"
   - "clover print"
   - "cloud print"
   - "strawberry print"
   - "flame print"
-  - "bear print"
   - "cross print"
   - "triangle print"
   - "crescent print"
-  - "fish print"
-  - "frog print"
-  - "sparkle print"
-  - "jaguar print"

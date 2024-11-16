@@ -22,31 +22,31 @@ clothingM:
   }"
 casual:
   "{\
-  __topwear__, __bottomwear__{, __color__ __outwear__|2::}\
-  |__dress__{, __color__ __outwear__|2::}\
-  |__kimono__{, __color__ __kimonoOut__|2::}\
-  |__onesie__{, __color__ __outwear__|2::}\
-  |__swimsuit__{, __color__ __outwear__|4::}\
+  2::__topwear__, __bottomwear__{, __color__ __outwear__|4::}\
+  |2::__dress__{, __color__ __outwear__|4::}\
+  |__kimono__{, __color__ __kimonoOut__|4::}\
+  |2::__onesie__{, __color__ __outwear__|4::}\
+  |2::__swimsuit__{, __color__ __outwear__|8::}\
   }"
 casualM:
   "{\
-  __topwearM__, __bottomwearM__{, __colorMono__ __outwear__|2::}\
-  |__dressM__{, __colorMono__ __outwear__|2::}\
-  |__kimonoM__{, __colorMono__ __kimonoOut__|2::}\
-  |__onesieM__{, __colorMono__ __outwear__|2::}\
-  |__swimsuitM__{, __colorMono__ __outwear__|4::}\
+  2::__topwearM__, __bottomwearM__{, __colorMono__ __outwear__|4::}\
+  |2::__dressM__{, __colorMono__ __outwear__|4::}\
+  |__kimonoM__{, __colorMono__ __kimonoOut__|4::}\
+  |2::__onesieM__{, __colorMono__ __outwear__|4::}\
+  |2::__swimsuitM__{, __colorMono__ __outwear__|8::}\
   }"
 lewd:
   "{\
   __underwear__{2::|, __legwear__}|\
   __bra__, __bottomwear__, __color__ __outwearOpen__{2::|, __legwear__}|\
-  __topwear__, __panty__{, __color__ __outwear__|4::}{2::|, __legwear__}\
+  __topwear__, __panty__{, __color__ __outwear__|10::}{2::|, __legwear__}\
   }"
 lewdM:
   "{\
   __underwearM__{2::|, __legwearM__}|\
   __braM__, __bottomwearM__, __colorMono__ __outwearOpen__{2::|, __legwearM__}|\
-  __topwearM__, __pantyM__{, __colorMono__ __outwear__|4::}{2::|, __legwearM__}\
+  __topwearM__, __pantyM__{, __colorMono__ __outwear__|10::}{2::|, __legwearM__}\
   }"
 lessCover:
   "{\
@@ -122,26 +122,68 @@ legwearM:
   - "{single leg pantyhose|pantyhose}, {thighband pantyhose, |fishnet pantyhose, |}__colorMono__ pantyhose"
 indoor: "indoors, {5::__room__|8::__building__}"
 outdoor: "outdoors, {8::__building__|7::__outside__|5::nature, __nature__}"
-oneEye:
-  "{\
-  3::__colorEye__ eyes\
-  |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, multicolored eyes\
-  }"
-oneEyeM:
-  "{\
-  3::__colorMono__ eyes\
-  |__colorMono__ eyes, multicolored eyes\
-  }"
 eye:
   "{\
-  4::__oneEye__{, one eye closed|3::}\
-  |{2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
+  3::__hotarueye/style__ __colorEye__ eyes{2::, __hotarueye/one__|}\
+  |__hotarueye/style__ {2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
+  |__hotarueye/closed__\
+  }"
+eyeD:
+  "{\
+  3::__hotarueye/styleD__ __colorEye__ eyes{2::, __hotarueye/oneD__|}\
+  |__hotarueye/styleD__ {2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
+  |__hotarueye/closedD__\
   }"
 eyeM:
   "{\
-  4::__oneEyeM__{, one eye closed|3::}\
-  |__colorMono__ eyes, heterochromia\
+  3::__hotarueye/style__ __colorMono__ eyes{2::, __hotarueye/one__|}\
+  |__hotarueye/style__ __colorMono__ eyes, heterochromia\
+  |__hotarueye/closed__\
   }"
+hotarueye:
+  one:
+    - "<lora:wink1_right_xl_v10:1.5> one eye closed"
+    - "<lora:wink2_right_xl_v10:1.5> one eye closed"
+    - "<lora:wink1_left_xl_v10:1.5> one eye closed"
+    - "<lora:wink2_left_xl_v10:1.5> one eye closed"
+    - "<lora:mekakure_left_xl_v10:1.5> hair over one eye"
+    - "<lora:mekakure_right_xl_v10:1.5> hair over one eye"
+  oneD:
+    - "one eye closed"
+    - "hair over one eye"
+  closed:
+    "{\
+    2::<lora:hotarueye_xl_closed1_v10:1.5> closed eyes\
+    |2::<lora:hotarueye_xl_closed2_v10:1.5> closed eyes\
+    |<lora:mekakure_xl_v10:1.5> hair over eyes\
+    }"
+  closedD:
+    "{\
+    2::closed eyes\
+    |hair over eyes\
+    }"
+  style:
+    - "<lora:hotarueye_xl_tsurime1_v10:1.5>"
+    - "<lora:hotarueye_xl_tsurime2_v10:1.5>"
+    - "<lora:hotarueye_xl_tsurime3_v10:1.5>"
+    - "<lora:hotarueye_xl_tsurime4_v10:1.5>"
+    - "<lora:hotarueye_xl_smirking_v10:1.5>"
+    - "<lora:hotarueye_xl_normaljitome1_v10:1.5>"
+    - "<lora:hotarueye_xl_hosome1_v20:1.5>"
+    - "<lora:hotarueye_xl_hosome2_v20:1.5>"
+    - "<lora:hotarueye_xl_tareme1_v10:1.5>"
+    - "<lora:hotarueye_xl_tareme2_v10:1.5>"
+    - "<lora:hotarueye_xl_tareme3_v10:1.5>"
+    - "<lora:hotarueye_xl_tareme4_v10:1.5>"
+    - "<lora:gekioko_xl_v10:1.5>"
+    - "<lora:hotarueye_xl_sleepy_v10:1.5>"
+    - "<lora:sensualface1_xl_v20:1.5>"
+    - "<lora:sensualface2_xl_v20:1.5>"
+  styleD:
+    - "tsurime"
+    - "jitome"
+    - "hosome"
+    - "tareme"
 hair: "__hairColor__, __hairLength__, __hairTexture__, __hairStyle__, __hairBang__{, __hairExtraTop__|2::}{, __hairExtraFront__|}{, __hairExtraSide__|3::}{, __hairExtraBottom__|3::}"
 hairM: "__hairColorM__, __hairLength__, __hairTexture__, __hairStyle__, __hairBang__{, __hairExtraTop__|2::}{, __hairExtraFront__|}{, __hairExtraSide__|3::}{, __hairExtraBottom__|3::}"
 poseH1R: "{2::__poseH1__,|}"
@@ -149,76 +191,91 @@ poseTR: "{2::__poseT__,|}"
 poseArm1: "{__poseAH1__|__poseH1R__ __poseA1__}"
 poseA:
   "{3::__poseAH2__|\
-  47::__poseArm1__, __poseArm1__|\
-  20::__poseH1R__ __poseH1R__ __poseA2__|\
+  8::__poseArm1__, __poseArm1__|\
+  6::__poseH1R__ __poseH1R__ __poseA2__|\
   4::__poseH2__, __poseA1__, __poseA1__}"
 pose:
-  "{__poseS__, |2::}{14::__poseA__, __poseTR__ (__poseB__, __poseL__:1.2)|\
-  10::__poseA__, __poseTR__ (__poseBL__:1.2)|\
-  6::__poseA__, ((__poseTB__:1.4), __poseL__:1.2)|\
-  2::__poseA__, (__poseTBL__:1.2)|\
-  (__poseATBL__:1.2)\
+  "__poseS__, {14::__poseA__, __poseTR__ __poseB__, __poseL__|\
+  10::__poseA__, __poseTR__ __poseBL__|\
+  6::__poseA__, __poseTB__, __poseL__|\
+  2::__poseA__, __poseTBL__|\
+  __poseATBL__\
   }"
-camera: "(__shot__:1.2){2::, __angle__|}"
-closeUp: "(close-up:1.2){2::, __angle__|}"
 expression: "{-2$$, $$__facial__|__facial__}, __looking__"
 shot:
   "{\
-  2::cowboy shot\
+  cowboy shot\
   |portrait\
-  |close-up\
   }"
 angle:
   "{\
-  3::straight-on\
-  |2::from side\
-  |2::from above\
+  from side\
+  |from above\
   |from below\
-  |2::dynamic angle\
-  |2::dutch angle\
+  |dutch angle\
+  |low angle view\
+  |overhead view\
   }"
 boob:
   flat:
     flat: "flat chest"
-    small: "[flat chest:small breasts:0.3]"
-    normal: "[flat chest:breasts:0.3]"
-    medium: "[flat chest:medium breasts:0.3]"
-    large: "[flat chest:large breasts:0.3]"
+    small: "[flat chest:small breasts:0.2]"
+    normal: "[flat chest:breasts:0.2]"
+    medium: "[flat chest:medium breasts:0.2]"
+    large: "[flat chest:large breasts:0.2]"
+    huge: "[flat chest:huge breasts:0.2]"
+    gigantic: "[flat chest:gigantic breasts:0.2]"
+    same: "flat chest"
   small:
-    flat: "[small breasts:flat chest:0.3]"
+    flat: "[small breasts:flat chest:0.2]"
     small: "small breasts"
-    normal: "[small ::0.3]breasts"
-    medium: "[small:medium:0.3] breasts"
-    large: "[small:large:0.3] breasts"
+    normal: "[small ::0.2]breasts"
+    medium: "[small:medium:0.2] breasts"
+    large: "[small:large:0.2] breasts"
+    huge: "[small:huge:0.2] breasts"
+    gigantic: "[small:gigantic:0.2] breasts"
+    same: "small breasts"
   normal:
-    flat: "[breasts:flat chest:0.3]"
-    small: "[small :0.3]breasts"
+    flat: "[breasts:flat chest:0.2]"
+    small: "[small :0.2]breasts"
     normal: "breasts"
-    medium: "[medium :0.3]breasts"
-    large: "[large :0.3]breasts"
+    medium: "[medium :0.2]breasts"
+    large: "[large :0.2]breasts"
+    huge: "[huge :0.2]breasts"
+    gigantic: "[gigantic :0.2]breasts"
+    same: "breasts"
   medium:
-    small: "[medium:small:0.3] breasts"
-    normal: "[medium ::0.3]breasts"
+    flat: "[medium breasts:flat chest:0.2]"
+    small: "[medium:small:0.2] breasts"
+    normal: "[medium ::0.2]breasts"
     medium: "medium breasts"
-    large: "[medium:large:0.3] breasts"
+    large: "[medium:large:0.2] breasts"
+    huge: "[medium:huge:0.2] breasts"
+    gigantic: "[medium:gigantic:0.2] breasts"
+    same: "medium breasts"
   large:
-    normal: "[large ::0.3]breasts"
-    medium: "[large:medium:0.3] breasts"
+    small: "[large:small:0.2] breasts"
+    normal: "[large ::0.2]breasts"
+    medium: "[large:medium:0.2] breasts"
     large: "large breasts"
-    huge: "[large:huge:0.3] breasts"
-    gigantic: "[large:gigantic:0.3] breasts"
+    huge: "[large:huge:0.2] breasts"
+    gigantic: "[large:gigantic:0.2] breasts"
+    same: "large breasts"
   huge:
-    large: "[huge:large:0.3] breasts"
+    normal: "[huge ::0.2]breasts"
+    medium: "[huge:medium:0.2] breasts"
+    large: "[huge:large:0.2] breasts"
     huge: "huge breasts"
-    gigantic: "[huge:gigantic:0.3] breasts"
+    gigantic: "[huge:gigantic:0.2] breasts"
+    same: "huge breasts"
   gigantic:
-    large: "[gigantic:large:0.3] breasts"
-    huge: "[gigantic:huge:0.3] breasts"
+    large: "[gigantic:large:0.2] breasts"
+    huge: "[gigantic:huge:0.2] breasts"
     gigantic: "gigantic breasts"
-
+    same: "gigantic breasts"
 android: "android, mechanical arms, mechanical legs, robot joints, robot ears, mechanical ears, glowing eyes"
 kemonoPlus: "{__furry__|__kemono__}"
-furryTrait: "furry, __colorFur__ fur, fluffy"
+furryTrait: "furry, __colorFur__ fur, body fur, fluffy"
 furry:
   - "(__furryTrait__, snout, whiskers:1.3), fox girl, fox ears, fox tail{ |, (slit pupils:1.2)}"
   - "(__furryTrait__, snout, whiskers:1.3), raccoon girl, raccoon ears, raccoon tail"
@@ -286,8 +343,6 @@ hairBang:
   - "crossed bangs"
   - "choppy bangs"
   - "diagonal bangs"
-  - "hair over eyes"
-  - "hair over one eye"
   - "long bangs"
   - "parted bangs"
   - "curtained hair"
@@ -453,7 +508,6 @@ facial:
   - "worried"
   - "serious"
   - "sigh"
-  - "sleepy"
   - "sulking"
   - "surprised"
   - "v-shaped eyebrows"
@@ -471,17 +525,19 @@ facial:
   - "wavy mouth"
   - "chestnut mouth"
   - "staring"
-  - "half-closed eyes"
-  - "squinting"
 looking:
   - "looking afar"
   - "looking at viewer"
-  - "looking away"
-  - "looking down"
+  - "looking ahead"
   - "looking to the side"
   - "looking up"
+  - "looking down"
 poseS:
+  - "facing viewer"
+  - "facing ahead"
+  - "facing to the side"
   - "head tilt"
+  - "head down"
 poseAH1:
   - "head rest"
   - "arm support"
@@ -507,6 +563,7 @@ poseAH1:
   - "shushing"
   - "hand on own ass"
   - "breast hold"
+  - "holding own hair"
 poseAH2:
   - "rabbit pose"
   - "heart hands"
@@ -606,17 +663,19 @@ poseTBL:
   - "lying, legs apart, legs up"
   - "standing split"
   - "lying, legs together, legs up"
+  - "table humping"
 poseATBL:
   - "all fours"
   - "top-down bottom-up"
   - "jack-o' challenge"
+  - "lying, on side, fetal position"
+  - "handstand"
 room:
   - "bathroom"
   - "bathtub"
   - "shower \\(place\\)"
   - "bedroom"
   - "messy room"
-  - "classroom"
   - "toilet stall"
   - "changing room"
   - "dungeon"
@@ -625,7 +684,6 @@ room:
   - "gym"
   - "locker room"
   - "gym storeroom"
-  - "infirmary"
   - "kitchen"
   - "laboratory"
   - "library"
@@ -657,7 +715,6 @@ building:
   - "prison"
   - "restaurant"
   - "ruins"
-  - "school"
   - "shrine"
   - "shop"
   - "bakery"
@@ -766,7 +823,6 @@ shirtType:
   - "shirt, off-shoulder shirt"
   - "shirt, polo shirt"
   - "shirt, ribbed shirt"
-  - "shirt, sailor shirt"
   - "shirt, sideless shirt"
   - "shirt, sleeveless shirt"
   - "shirt, strapless shirt"
@@ -805,7 +861,6 @@ topwearOther:
   - "sweater, sweater, cable knit"
 outwear:
   "{\
-  __cardigan__{|, open cardigan}|\
   5::__coat__{|, open coat}|\
   __hoodie__{|, open hoodie}|\
   5::__jacket__{|, open jacket}|\
@@ -813,16 +868,11 @@ outwear:
   }"
 outwearOpen:
   "{\
-  __cardigan__, open cardigan|\
   5::__coat__, open coat|\
   __hoodie__, open hoodie|\
   5::__jacket__, open jacket|\
   2::__vest__, open vest\
   }"
-cardigan:
-  - "cardigan, cardigan"
-  - "cardigan, hooded cardigan"
-  - "cardigan, cardigan vest"
 coat:
   - "coat, coat"
   - "coat, collared coat"
@@ -953,7 +1003,6 @@ dressType:
   - "dress, gown, dress"
   - "dress, pencil dress"
   - "dress, pinafore dress"
-  - "dress, sailor dress"
   - "dress, santa dress"
   - "dress, sundress"
   - "dress, sweater dress"
@@ -1039,7 +1088,6 @@ bikiniTop:
   - "bikini, maid bikini, bikini"
   - "bikini, layered bikini, bikini"
   - "bikini, eyepatch bikini"
-  - "bikini, sailor bikini, bikini"
   - "bikini, bow bikini, bikini"
   - "bikini, santa bikini, bikini"
   - "bikini, sports bikini"
@@ -1063,14 +1111,10 @@ bikiniStyle:
   }"
 1PSwimsuitType:
   - "one-piece swimsuit, one-piece swimsuit"
-  - "one-piece swimsuit, school swimsuit, one-piece swimsuit"
   - "one-piece swimsuit, competition swimsuit, one-piece swimsuit"
   - "one-piece swimsuit, highleg swimsuit, one-piece swimsuit"
   - "one-piece swimsuit, casual one-piece swimsuit, one-piece swimsuit"
-  - "one-piece swimsuit, competition school swimsuit, one-piece swimsuit"
-  - "one-piece swimsuit, old school swimsuit, one-piece swimsuit"
   - "one-piece swimsuit, frilled one-piece swimsuit, one-piece swimsuit"
-  - "one-piece swimsuit, new school swimsuit, one-piece swimsuit"
   - "one-piece swimsuit, impossible swimsuit, one-piece swimsuit"
   - "one-piece swimsuit, strapless one-piece swimsuit, one-piece swimsuit"
 1PSwimsuitStyle:

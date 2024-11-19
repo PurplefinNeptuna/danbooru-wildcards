@@ -124,21 +124,27 @@ indoor: "indoors, {5::__room__|8::__building__}"
 outdoor: "outdoors, {8::__building__|7::__outside__|5::nature, __nature__}"
 eye:
   "{\
-  3::__hotarueye/style__ __colorEye__ eyes{2::, __hotarueye/one__|}\
+  3::__hotarueye/style__ __colorEye__ eyes{, __hotarueye/one__|2::}\
   |__hotarueye/style__ {2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
   |__hotarueye/closed__\
   }"
 eyeD:
   "{\
-  3::__hotarueye/styleD__ __colorEye__ eyes{2::, __hotarueye/oneD__|}\
+  3::__hotarueye/styleD__ __colorEye__ eyes{, __hotarueye/oneD__|2::}\
   |__hotarueye/styleD__ {2$$ eyes, $$__colorEye__|__colorEye__} eyes, heterochromia\
   |__hotarueye/closedD__\
   }"
 eyeM:
   "{\
-  3::__hotarueye/style__ __colorMono__ eyes{2::, __hotarueye/one__|}\
+  3::__hotarueye/style__ __colorMono__ eyes{, __hotarueye/one__|2::}\
   |__hotarueye/style__ __colorMono__ eyes, heterochromia\
   |__hotarueye/closed__\
+  }"
+eyeC:
+  "{\
+  3::\
+  |one eye closed, \
+  |closed eyes, \
   }"
 hotarueye:
   one:
@@ -206,6 +212,7 @@ shot:
   "{\
   cowboy shot\
   |portrait\
+  |full body\
   }"
 angle:
   "{\
